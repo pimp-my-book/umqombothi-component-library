@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel watch:css start:react",
-    "build": "npm-run-all buil:css build:react",
+    "build": "npm-run-all build:css build:react",
     "build:css": "postcss src/css/tailwind.css -o src/index.css",
     "watch:css": "postcss src/css/tailwind.css -o src/index.css -w",
     "start:react": "npx styleguidist server",
