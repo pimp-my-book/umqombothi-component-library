@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# ignore StyleGuidist Build dir
+/styleguide-build
+
 # production
 /build
 
