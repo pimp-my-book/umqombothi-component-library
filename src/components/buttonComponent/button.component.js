@@ -24,7 +24,7 @@ const PrimaryButton = ({
             onClick={onClick}
             disabled={disabled}
             >
-              { text}
+              { text }
               {login ? 'Login' : 'Sign Up'}
             </button>
         )
@@ -35,7 +35,7 @@ const PrimaryButton = ({
             onClick={onClick}
             disabled={disabled}
             >
-              { text}
+              { text }
             </button>
         )
     }
