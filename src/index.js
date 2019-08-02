@@ -1,2 +1,2 @@
-export * from "../src/components/buttonComponent/primaryButton"
+export * from "./components/buttonComponent/primaryButton"
 
