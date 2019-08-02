@@ -1,2 +1,3 @@
-export * from "./components/buttonComponent/PrimaryButton"
+import PrimaryButton  from "./components/buttonComponent/PrimaryButton"
 
+export {PrimaryButton}
