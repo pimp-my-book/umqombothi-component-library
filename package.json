@@ -1,6 +1,6 @@
 {
   "name": "umqombothi-component-library",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel watch:css start:react",
-    "build": "npm-run-all build:css build:react",
+    "build": "react-scripts build build:css build:react",
     "build:css": "postcss src/css/tailwind.css -o src/index.css",
     "watch:css": "postcss src/css/tailwind.css -o src/index.css -w",
     "start:react": "npx styleguidist server",
