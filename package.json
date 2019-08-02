@@ -1,11 +1,16 @@
 {
   "name": "umqombothi-component-library",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "..src/index.js",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pimp-my-book/umqombothi-component-library.git"
   },
   "scripts": {
     "start": "npm-run-all --parallel watch:css start:react",
