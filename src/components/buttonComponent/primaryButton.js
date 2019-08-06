@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../../index.css'
 
 const propTypes ={
     className: PropTypes.string,
@@ -19,7 +20,7 @@ const PrimaryButton = ({
     if(login){
        return (
             <button
-            className={`primary  ${className}`}
+            className={`bg-pmb-pink-darkest text-white font-bold py-2 px-4 rounded-lg  ${className}`}
             onClick={onClick}
             disabled={disabled}
             >
