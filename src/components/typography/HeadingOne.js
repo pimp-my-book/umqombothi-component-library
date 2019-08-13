@@ -8,7 +8,7 @@ className
 }) => {
     return(
        <p
-       className={` `}
+       className={`text-5xl font-display`}
        >
            {text}
        </p>
