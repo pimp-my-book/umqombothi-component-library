@@ -4,4 +4,4 @@ import HeadingOne from './components/typography/HeadingOne'
 import Emoji from './components/emoji/Emoji'
 import './index.css'
 
-export {PrimaryButton}
+export {PrimaryButton,HeadingOne,NavigationBar,Emoji}
