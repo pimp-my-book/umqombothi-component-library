@@ -15,4 +15,11 @@ className
     )
 }
 
+const propTypes ={
+    className: PropTypes.string,
+    text: PropTypes.string,
+}
+
+HeadingOne.propTypes = propTypes;
+
 export default HeadingOne
