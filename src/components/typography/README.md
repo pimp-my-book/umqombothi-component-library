@@ -5,3 +5,13 @@ Heading One:
 text="Hello World"
 />
 ```
+
+Heading Two:
+
+
+```
+<HeadingOne
+text="Hello World"
+/>
+
+```
