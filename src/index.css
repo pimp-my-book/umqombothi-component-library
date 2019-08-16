@@ -4037,7 +4037,7 @@ pmbTrans:hover:before {
 }
 
 .font-body {
-  font-family: kanit, open-sans !important;
+  font-family: Kanit, open-sans !important;
 }
 
 .font-hairline {
@@ -8266,7 +8266,7 @@ pmbTrans:hover:before {
   z-index: auto !important;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Paytone+One|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One|Kanit');
 
 @media (min-width: 640px) {
   .sm\:appearance-none {
@@ -11682,7 +11682,7 @@ pmbTrans:hover:before {
   }
 
   .sm\:font-body {
-    font-family: kanit, open-sans !important;
+    font-family: Kanit, open-sans !important;
   }
 
   .sm\:font-hairline {
@@ -19326,7 +19326,7 @@ pmbTrans:hover:before {
   }
 
   .md\:font-body {
-    font-family: kanit, open-sans !important;
+    font-family: Kanit, open-sans !important;
   }
 
   .md\:font-hairline {
@@ -26970,7 +26970,7 @@ pmbTrans:hover:before {
   }
 
   .lg\:font-body {
-    font-family: kanit, open-sans !important;
+    font-family: Kanit, open-sans !important;
   }
 
   .lg\:font-hairline {
@@ -34614,7 +34614,7 @@ pmbTrans:hover:before {
   }
 
   .xl\:font-body {
-    font-family: kanit, open-sans !important;
+    font-family: Kanit, open-sans !important;
   }
 
   .xl\:font-hairline {
