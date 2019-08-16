@@ -12,5 +12,5 @@ test('It accepts text as a prop', ()=>{
         />
     )
 
-    expect(getByText(text)).toBe(String)
+    expect(getByText(text))
 })
