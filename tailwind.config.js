@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ['Rubik Mono One', 'open-sans'],
-      body: ['kanit', 'open-sans'],
+      body: ['Kanit', 'open-sans'],
     },
     extend: {
       colors: {
