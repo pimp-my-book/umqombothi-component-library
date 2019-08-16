@@ -19,8 +19,8 @@
     "build": "react-scripts build build:css build:react",
     "build:css": "postcss src/css/tailwind.css -o src/index.css",
     "watch:css": "postcss src/css/tailwind.css -o src/index.css -w",
-    "start:react": "npx styleguidist server",
-    "build:react": "npx styleguidist build",
+    "start:react": "yarn styleguidist server",
+    "build:react": "yarn styleguidist build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
