@@ -1,6 +1,6 @@
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
-import  HeadingThree from '../components/typography/HeadingTwo'
+import  HeadingThree from '../components/typography/HeadingThree'
 import '@testing-library/react/cleanup-after-each'
 import '@testing-library/jest-dom/extend-expect'
 
