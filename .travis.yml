@@ -1,7 +1,10 @@
 language: node_js
 node_js:
- - '8'
-
+- '8'
 deploy:
-  provider: script
-  script: "npm publish"           
+  provider: npm
+  email: u14284783@tuks.co.za
+  api_key:
+    secure: T+outE40ymu0pXTqFBMtSsOUFNszB1Hj6Oh4apiaxopBmkCEUld2X7UbpLwo94zXSeVPQJQkwcA9YmF2/ovFZK3vdBQmr/1gr76kxfbphdnzzh6kXu/HnL4oZ1e2G2hPf7vroD/tS2IAfIaM+dMhklrXDDT8jsFmFaDWwKbkU2ocjjMj0E1uyM5SYsIFslqOf9RsBpexGtN41AxJHdbqk/6eszcsuFDinE/ew1Bvo49DXWCPIMNoPP5CpViWdMkCoMjE+5DGglNNQb85jXheEsFNIKp9yPoUcUTVSPQMp6T5IGZaNMt6PJlNbrrA6FFEJckP1E1d6qWz+3PLWjE/sk3v7kxKOLbLRBE3H2OGNrU+8dQfdNqHrWmNTNWpZAQMoFLj716WVhyNV91Zw3nXHs2f7a5azarBgX7Vjb0yAu5Gry1yJU/JOkSzxsk0A/S1OzQhyUKUUUmb0OPqXuSteXcI86PGeV+VymSMY9JjtXhotBUQPAWRgZ2jbqSkfaOGyU84LO5vM0ZHQrLRQSq5UIkdhfrWSbMQKneJCuJrCSVvi/fo2FFsAQ9Lh0Ob4VUBo5llsmrJRYyTvOa9P4jFVorQt6C4Ir/1uDsVOc6vZZ+fLtjHjfXB1B0dFak/0TbqmnBxMVNCx19xmwvJSBM7hKYWfFadnnM9LsSJPplNLU8=
+  on:
+    branch: master
