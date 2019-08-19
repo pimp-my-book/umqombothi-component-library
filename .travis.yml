@@ -4,4 +4,4 @@ node_js:
 
 deploy:
   provider: script
-  script: "npm publish"
+  script: "npm publish"           
