@@ -1,9 +1,16 @@
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
-import  HeadingOne from '../components/typography/HeadingOne'
+import  HeadingFour from '../components/typography/HeadingOne'
 import '@testing-library/react/cleanup-after-each'
 import '@testing-library/jest-dom/extend-expect'
 
 test('It accepts text as a prop', ()=>{
-    
+    const text = 'What did you find'
+    const {getByText} = render(
+        <HeadingFour
+        text={text}
+        />
+    )
+
+    expect(getByText(text))
 })
