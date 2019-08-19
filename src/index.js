@@ -1,8 +1,11 @@
-import PrimaryButton  from './components/buttons/PrimaryButton'
-import NavigationBar from '.components/navigation/NavigationBar'
+import PrimaryButton  from 
 import HeadingOne from './components/typography/HeadingOne'
 import HeadingTwo from './components/typography/HeadingTwo'
 import Emoji from './components/emoji/Emoji'
 import './index.css'
 
-export {PrimaryButton,NavigationBar,HeadingOne,HeadingTwo,Emoji}
+export {default as PrimaryButton} from './components/buttons/PrimaryButton',
+export {default as NavigationBar } from '.components/navigation/NavigationBar',
+export default as HeadingOne {} from ./components/typography/HeadingOne'
+'
+,HeadingOne,HeadingTwo,Emoji}
