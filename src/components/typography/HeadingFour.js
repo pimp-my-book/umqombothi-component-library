@@ -8,7 +8,7 @@ className
 }) => {
     return(
        <p
-       className={`text-2xl font-body`}
+       className={`text-2xl font-body ${className}`}
        >
            {text}
        </p>
