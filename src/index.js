@@ -5,4 +5,4 @@ import HeadingTwo from './components/typography/HeadingTwo'
 import Emoji from './components/emoji/Emoji'
 import './index.css'
 
-export {PrimaryButton,HeadingOne,NavigationBar,Emoji,HeadingTwo}
+export {PrimaryButton,NavigationBar,HeadingOne,HeadingTwo,Emoji}
