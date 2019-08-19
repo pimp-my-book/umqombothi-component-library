@@ -4,4 +4,4 @@ node_js:
 
 deploy:
   provider: script
-  script: "$HOME/.npmrc && npm publish"
+  script: "npm publish"
