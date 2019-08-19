@@ -1,6 +1,6 @@
 {
   "name": "@pimp-my-book/umqombothi-component-library",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "private": false,
   "main": "src/index.js",
   "module": "src/index.js",
