@@ -19,14 +19,17 @@ const Footer = ({
            className="text-white text-sm"
            />
            <BodyText
+          className="text-white"
            text="Blog"
            />
            
            <BodyText
+           className="text-white"
            text="Careers"
            />
            
            <BodyText
+            className="text-white"
            text="About Pimp My Book"
            />
          </div>
