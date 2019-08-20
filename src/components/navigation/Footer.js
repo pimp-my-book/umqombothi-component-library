@@ -111,12 +111,15 @@ const Footer = ({
              alt="visa logo"
              />
            </div>
-             <CaptionText
+           <div className="flex flex-col">
+           <CaptionText
              text="Privacy Policy"
              />
              <CaptionText
              text="Terms and conditions"
              />
+           </div>
+             
              <CaptionText
              text={`© ${new Date().getFullYear()} Pimp My Book`}
              />
