@@ -82,14 +82,17 @@ const Footer = ({
              />
              <div className="flex flex-row mt-3 ml-5 p-3">
              <img
+             className="p-2"
              src="https://pmb-plus-assets.s3.amazonaws.com/instagram.svg"
              alt="instagram logo"
              />
              <img
+             className="pr-2"
              src="https://pmb-plus-assets.s3.amazonaws.com/facebook.svg"
              alt="facebook logo"
              />
              <img
+             className=""
              src="https://pmb-plus-assets.s3.amazonaws.com/twitter.svg"
              alt="twitter logo"
              />
