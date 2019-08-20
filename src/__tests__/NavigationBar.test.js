@@ -1,5 +1,9 @@
 
-
+import React from 'react'
+import {render, fireEvent} from '@testing-library/react'
+import  NavigationBar from '../components/navigation/NavigationBar'
+import '@testing-library/react/cleanup-after-each'
+import '@testing-library/jest-dom/extend-expect'
 
 ///////////////////////////////////////////////////////////////////////
 /* Comoponent Behaviours
@@ -42,6 +46,12 @@ it.skip('renders without crashing', () =>{
 //
 
 ///////////////////////////////////////////////////////////////////////
-it.skip('',()=>{
-    
+describe('<NavigationBar/>', ()=>{
+    it('Renders', ()=>{
+
+    })
+
+    it('toggles open and close',()=>{
+        
+    })
 })
