@@ -8,5 +8,6 @@ export {default as HeadingThree} from './components/typography/HeadingThree'
 export {default as HeadingFour} from './components/typography/HeadingThree'
 export {default as CaptionText} from './components/typography/CaptionText'
 export {default as BodyText} from './components/typography/BodyText'
+export {default as Footer } from './components/navigation/Footer'
 
 
