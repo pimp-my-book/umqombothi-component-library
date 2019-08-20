@@ -80,7 +80,7 @@ const Footer = ({
              src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
              alt="pmb plus logo"
              />
-             <div className="flex flex-row">
+             <div className="flex flex-row mt-3 ml-5 p-3">
              <img
              src="https://pmb-plus-assets.s3.amazonaws.com/instagram.svg"
              alt="instagram logo"
