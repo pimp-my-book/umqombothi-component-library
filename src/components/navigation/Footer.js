@@ -13,7 +13,7 @@ const Footer = ({
         className={`${className} w-full fixed-bottom bottom-0 left-0 h-150 absolute bg-blueDarkest border-bottom`}
         >
         <div className="flex x:flex-row s:flex-col md:flex-row p-5">
-        <div >
+        <div className="flex flex-col">
              {/*Make money with us col*/}
            <HeadingFive
            text="Get to know us"
@@ -34,7 +34,7 @@ const Footer = ({
            text="About Pimp My Book"
            />
          </div>
-         <div>
+         <div className="flex flex-col x:ml-32 md:ml-16 s:mt-5 md:mt-0">
              {/*We can help you  col*/}
              <HeadingFive
            text="Make money with us"
@@ -50,7 +50,7 @@ const Footer = ({
            text="Be a vendor on PMB Plus"
            />
          </div>
-         <div>
+         <div className="flex flex-col x:ml-32 md:ml-16 s:mt-5 md:mt-0">
              {/*Help col*/}
              <HeadingFive
            text="We Can Help You"
@@ -74,7 +74,7 @@ const Footer = ({
            text="Help"
            />
          </div>
-         <div>
+         <div className="flex flex-col x:ml-32 md:ml-16 s:mt-5 md:mt-0">
              {/*Logos col*/}
              <img
              src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
@@ -93,7 +93,7 @@ const Footer = ({
              alt="twitter logo"
              />
          </div>
-         <div>
+         <div className="flex flex-col x:ml-32 md:ml-16 s:mt-5 md:mt-0">
              {/*credits col*/}
              <img
              src="https://pmb-plus-assets.s3.amazonaws.com/mastercard-2.svg"
