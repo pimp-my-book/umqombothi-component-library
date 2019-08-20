@@ -50,6 +50,30 @@ const Footer = ({
            />
          </div>
          <div>
+             {/*Help col*/}
+             <HeadingFive
+           text="We Can Help You"
+           className="text-white text-sm"
+           />
+           <BodyText
+          className="text-white"
+           text="Your orders"
+           />
+           
+           <BodyText
+           className="text-white"
+           text="Shipping Policy"
+           />
+           <BodyText
+           className="text-white"
+           text="Returns & Refunds"
+           />
+            <BodyText
+           className="text-white"
+           text="Help"
+           />
+         </div>
+         <div>
              {/*Logos col*/}
          </div>
          <div>
