@@ -9,7 +9,18 @@ const Footer = ({
         <footer
         className={`${className} w-full h-150 absolute bg-blueDarkest border-bottom`}
         >
-      hi
+         <div>
+             {/*Make money with us col*/}
+         </div>
+         <div>
+             {/*We can help you  col*/}
+         </div>
+         <div>
+             {/*Logos col*/}
+         </div>
+         <div>
+             {/*credits col*/}
+         </div>
         </footer>
     )
 }
