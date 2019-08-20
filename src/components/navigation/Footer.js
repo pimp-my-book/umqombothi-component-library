@@ -10,7 +10,7 @@ const Footer = ({
 }) => {
     return(
         <footer
-        className={`${className} w-full fixed-bottom bottom-0 left-0 h-150 absolute bg-blueDarkest border-bottom`}
+        className={`${className} w-full fixed-bottom bottom-0 left-0 h-250 absolute bg-blueDarkest border-bottom`}
         >
         <div className="flex x:flex-row s:flex-col md:flex-row p-5">
         <div className="flex flex-col">
