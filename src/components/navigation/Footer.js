@@ -6,8 +6,10 @@ const Footer = ({
     className
 }) => {
     return(
-        <footer>
-
+        <footer
+        className={`${className} w-full h-150 absolute bg-blueDarkest border-bottom`}
+        >
+      hi
         </footer>
     )
 }
