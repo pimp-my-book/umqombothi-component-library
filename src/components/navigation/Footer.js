@@ -95,6 +95,14 @@ const Footer = ({
          </div>
          <div>
              {/*credits col*/}
+             <img
+             src="https://pmb-plus-assets.s3.amazonaws.com/mastercard-2.svg"
+             alt="mastercard logo"
+             />
+             <img
+             src="https://pmb-plus-assets.s3.amazonaws.com/visa.svg"
+             alt="visa logo"
+             />
          </div>
         </div>
          
