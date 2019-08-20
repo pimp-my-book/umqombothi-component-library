@@ -17,7 +17,7 @@ const Footer = ({
              {/*Make money with us col*/}
            <HeadingFive
            text="Get to know us"
-           className="text-white text-sm"
+           className="text-white text-justify"
            />
            <BodyText
           className="text-white font-thin"
@@ -113,12 +113,15 @@ const Footer = ({
            </div>
            <div className="flex flex-col">
            <CaptionText
+           className="text-white"
              text="Privacy Policy"
              />
              <CaptionText
+             className="text-white"
              text="Terms and conditions"
              />
              <CaptionText
+             className="text-white"
              text={`© ${new Date().getFullYear()} Pimp My Book`}
              />
            </div>
