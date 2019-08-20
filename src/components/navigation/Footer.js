@@ -20,17 +20,17 @@ const Footer = ({
            className="text-white text-sm"
            />
            <BodyText
-          className="text-white"
+          className="text-white font-thin"
            text="Blog"
            />
            
            <BodyText
-           className="text-white"
+           className="text-white font-thin"
            text="Careers"
            />
            
            <BodyText
-            className="text-white"
+            className="text-white font-thin"
            text="About Pimp My Book"
            />
          </div>
@@ -41,12 +41,12 @@ const Footer = ({
            className="text-white text-sm"
            />
            <BodyText
-          className="text-white"
+          className="text-white font-thin"
            text="Sell on PMB Plus"
            />
            
            <BodyText
-           className="text-white"
+           className="text-white font-thin"
            text="Be a vendor on PMB Plus"
            />
          </div>
@@ -57,20 +57,20 @@ const Footer = ({
            className="text-white text-sm"
            />
            <BodyText
-          className="text-white"
+          className="text-white font-thin"
            text="Your orders"
            />
            
            <BodyText
-           className="text-white"
+           className="text-white font-thin"
            text="Shipping Policy"
            />
            <BodyText
-           className="text-white"
+           className="text-white font-thin"
            text="Returns & Refunds"
            />
             <BodyText
-           className="text-white"
+           className="text-white font-thin"
            text="Help"
            />
          </div>
