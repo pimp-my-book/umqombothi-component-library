@@ -14,7 +14,10 @@ const Footer = ({
         >
          <div>
              {/*Make money with us col*/}
-
+           <HeadingFour
+           text="Get to know us"
+           className="text-white text-sm"
+           />
          </div>
          <div>
              {/*We can help you  col*/}
