@@ -1,7 +1,7 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
 import BodyText from '../typography/BodyText'
-import HeadingFour from '../typography/HeadingFour'
+import HeadingFive from '../typography/HeadingFive'
 import CaptionText from '../typography/CaptionText'
 import '../../index.css'
 
@@ -14,7 +14,7 @@ const Footer = ({
         >
          <div>
              {/*Make money with us col*/}
-           <HeadingFour
+           <HeadingFive
            text="Get to know us"
            className="text-white text-sm"
            />
