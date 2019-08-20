@@ -4,11 +4,11 @@ import '@testing-library/react/cleanup-after-each'
 import '@testing-library/jest-dom/extend-expect'
 
 describe('<Footer/>', ()=>{
-    test('It renders children', ()=>{
-
+    test.skip('It renders children', ()=>{
+      
     })
 
-    test('It has valid links to external sites', ()=>{
-        
+    test.skip('It has valid links to external sites', ()=>{
+
     })
 })
