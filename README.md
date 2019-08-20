@@ -1,7 +1,7 @@
 # Umqombothi  🍶
 
 [![Build Status](https://travis-ci.org/pimp-my-book/umqombothi-component-library.svg?branch=master)](https://travis-ci.org/pimp-my-book/umqombothi-component-library)
-[![version][version-badge]][package]]
+
 This is the React component Library based off the Design System for PMB Plus.
 
 Features
