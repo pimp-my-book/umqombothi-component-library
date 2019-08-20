@@ -331,6 +331,20 @@ zIndex: ['responsive'],
       }
 
       addComponents(btTrans)
-    }
+    },
+    function({addComponents}){
+      const border = {
+        ".border-top": {
+          borderTop: "#ED0677 8px solid"
+        }
+      };
+      const borderBottom = {
+          ".border-bottom":{
+              borderBottom: '#ED0677 8px solid'
+          }
+      };
+
+      addComponents(borderBottom);
+      addComponents(border);
   ]
 }
