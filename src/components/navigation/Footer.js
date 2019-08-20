@@ -103,6 +103,12 @@ const Footer = ({
              src="https://pmb-plus-assets.s3.amazonaws.com/visa.svg"
              alt="visa logo"
              />
+             <CaptionText
+             text="Privacy Policy"
+             />
+             <CaptionText
+             text="Terms and conditions"
+             />
          </div>
         </div>
          
