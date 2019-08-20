@@ -12,7 +12,8 @@ const Footer = ({
         <footer
         className={`${className} w-full fixed-bottom bottom-0 left-0 h-150 absolute bg-blueDarkest border-bottom`}
         >
-         <div className="flex x:flex-row s:flex-col md:flex-row p-5">
+        <div className="flex x:flex-row s:flex-col md:flex-row p-5">
+        <div >
              {/*Make money with us col*/}
            <HeadingFive
            text="Get to know us"
@@ -95,6 +96,8 @@ const Footer = ({
          <div>
              {/*credits col*/}
          </div>
+        </div>
+         
         </footer>
     )
 }
