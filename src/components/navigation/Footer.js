@@ -1,5 +1,8 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
+import BodyText from '../typography/BodyText'
+import HeadingFour from '../typography/HeadingFour'
+import CaptionText from '../typography/CaptionText'
 import '../../index.css'
 
 const Footer = ({
@@ -11,6 +14,7 @@ const Footer = ({
         >
          <div>
              {/*Make money with us col*/}
+
          </div>
          <div>
              {/*We can help you  col*/}
