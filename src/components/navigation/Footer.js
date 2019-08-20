@@ -100,7 +100,9 @@ const Footer = ({
          </div>
          <div className="flex flex-col x:ml-32 md:ml-16 s:mt-5 md:mt-0">
              {/*credits col*/}
-             <img
+           <div className="flex flex-row">
+           <img
+           className="pr-2"
              src="https://pmb-plus-assets.s3.amazonaws.com/mastercard-2.svg"
              alt="mastercard logo"
              />
@@ -108,6 +110,7 @@ const Footer = ({
              src="https://pmb-plus-assets.s3.amazonaws.com/visa.svg"
              alt="visa logo"
              />
+           </div>
              <CaptionText
              text="Privacy Policy"
              />
