@@ -109,6 +109,9 @@ const Footer = ({
              <CaptionText
              text="Terms and conditions"
              />
+             <CaptionText
+             text={`© ${new Date().getFullYear()} Pimp My Book`}
+             />
          </div>
         </div>
          
