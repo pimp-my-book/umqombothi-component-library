@@ -9,7 +9,7 @@ className='',
 }) => {
     return(
         <nav
-        className={`border-top flex items-center justify-between flex-wrap bg-green-darker p-6`}
+        className={`border-top bg-blueDarkest flex items-center justify-between flex-wrap bg-green-darker p-6`}
         >
         <div
         className={`flex items-center flex-no-shrink text`}
