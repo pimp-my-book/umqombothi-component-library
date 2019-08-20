@@ -92,7 +92,7 @@ const Footer = ({
              alt="facebook logo"
              />
              <img
-             className=""
+             
              src="https://pmb-plus-assets.s3.amazonaws.com/twitter.svg"
              alt="twitter logo"
              />
