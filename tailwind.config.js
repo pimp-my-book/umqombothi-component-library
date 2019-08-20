@@ -346,5 +346,6 @@ zIndex: ['responsive'],
 
       addComponents(borderBottom);
       addComponents(border);
-  ]
+    }
+    ]
 }
