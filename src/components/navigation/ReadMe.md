@@ -6,7 +6,6 @@ Navigation Bar:
 ```
 
 Footer:
-
 ```
 
 

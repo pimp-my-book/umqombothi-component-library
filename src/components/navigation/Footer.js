@@ -77,8 +77,8 @@ const Footer = ({
          <div>
              {/*Logos col*/}
              <img
-             src=""
-             alt=""
+             src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
+             alt="pmb plus logo"
              />
              <img
              src=""
