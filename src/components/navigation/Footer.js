@@ -81,16 +81,16 @@ const Footer = ({
              alt="pmb plus logo"
              />
              <img
-             src=""
-             alt=""
+             src="https://pmb-plus-assets.s3.amazonaws.com/instagram.svg"
+             alt="instagram logo"
              />
              <img
-             src=""
-             alt=""
+             src="https://pmb-plus-assets.s3.amazonaws.com/facebook.svg"
+             alt="facebook logo"
              />
              <img
-             src=""
-             alt=""
+             src="https://pmb-plus-assets.s3.amazonaws.com/twitter.svg"
+             alt="twitter logo"
              />
          </div>
          <div>
