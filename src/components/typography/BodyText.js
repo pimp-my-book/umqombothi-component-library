@@ -4,15 +4,26 @@ import '../../index.css'
 
 const BodyText = ({
 text,
-className
+className,
+regular
 }) => {
-    return(
-       <p
-       className={`text-lg font-body ${className}`}
-       >
-           {text}
-       </p>
-    )
+    if(regular){
+        return(
+            <p
+            className={`text-lg font-body ${className}`}
+            >
+                {text}
+            </p>
+         )
+    } else {
+        return(
+            <p
+            className={`text-sm font-body ${className}`}
+            >
+                {text}
+            </p>
+         )
+    }
 }
 
 const propTypes ={

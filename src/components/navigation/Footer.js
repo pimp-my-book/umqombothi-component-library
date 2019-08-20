@@ -18,6 +18,17 @@ const Footer = ({
            text="Get to know us"
            className="text-white text-sm"
            />
+           <BodyText
+           text="Blog"
+           />
+           
+           <BodyText
+           text="Careers"
+           />
+           
+           <BodyText
+           text="About Pimp My Book"
+           />
          </div>
          <div>
              {/*We can help you  col*/}
