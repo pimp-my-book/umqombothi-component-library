@@ -75,6 +75,22 @@ const Footer = ({
          </div>
          <div>
              {/*Logos col*/}
+             <img
+             src=""
+             alt=""
+             />
+             <img
+             src=""
+             alt=""
+             />
+             <img
+             src=""
+             alt=""
+             />
+             <img
+             src=""
+             alt=""
+             />
          </div>
          <div>
              {/*credits col*/}
