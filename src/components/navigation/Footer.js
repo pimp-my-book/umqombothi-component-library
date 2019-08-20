@@ -35,6 +35,19 @@ const Footer = ({
          </div>
          <div>
              {/*We can help you  col*/}
+             <HeadingFive
+           text="Make money with us"
+           className="text-white text-sm"
+           />
+           <BodyText
+          className="text-white"
+           text="Sell on PMB Plus"
+           />
+           
+           <BodyText
+           className="text-white"
+           text="Be a vendor on PMB Plus"
+           />
          </div>
          <div>
              {/*Logos col*/}
