@@ -20,7 +20,7 @@ className='',
      
         </div>
         <div className="block lg:hidden">
-           <span onClick={} className="flex items-center px-3 py-2">
+           <span onClick={()=> setIsMenuOpen(!isMenuOpen)} className="flex items-center px-3 py-2">
              <img
              src="../../assets/menu.svg"
              alt="menu"
