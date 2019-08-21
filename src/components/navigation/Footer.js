@@ -1,5 +1,5 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import BodyText from '../typography/BodyText'
 import HeadingFive from '../typography/HeadingFive'
 import CaptionText from '../typography/CaptionText'
@@ -134,4 +134,8 @@ const Footer = ({
     )
 }
 
+const propTypes = {
+  className: PropTypes.string
+}
+Footer.propTypes = propTypes
 export default Footer
