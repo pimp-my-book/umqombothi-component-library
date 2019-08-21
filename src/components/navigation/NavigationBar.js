@@ -18,7 +18,7 @@ import '../../index.css'
 const NavigationBar = ({
 className='',
 children,
-props
+content
 }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -29,8 +29,11 @@ props
         <div
         className={`flex items-center flex-no-shrink text`}
         >
-        PMB +
-     
+          <img
+             src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
+             alt="PMB +"
+             />
+        
         </div>
         {children}
         <div className="block ">
@@ -44,7 +47,7 @@ props
         <div
         className={isMenuOpen ? 'block sm-600:block md:block sm-land:block':'hidden'}
         >
-            {props.navdrawer}
+            {content}
         </div>
 
         </nav>
@@ -54,7 +57,7 @@ props
 const propTypes ={
     className: PropTypes.string,
     children: PropTypes.element,
-    props: PropTypes.func
+    content: PropTypes.func
 }
 NavigationBar.propTypes = propTypes
 export default NavigationBar
