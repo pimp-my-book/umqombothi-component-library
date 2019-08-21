@@ -6,7 +6,7 @@ import '../../index.css'
 const NavigationBar = ({
 className='',
 children
-
+props
 }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -32,7 +32,7 @@ children
         <div
         className={isMenuOpen ? 'block sm-600:block md:block sm-land:block':'hidden'}
         >
-            {children}
+            {props.navdrawer}
         </div>
 
         </nav>
