@@ -1,6 +1,6 @@
 
 import React,{useState} from 'react';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import '../../index.css'
 
 const NavigationBar = ({
@@ -37,6 +37,12 @@ props
 
         </nav>
     )
+}
+
+const propTypes ={
+    className: PropTypes.string,
+    children: PropTypes.element,
+    props: PropTypes.func
 }
 
 export default NavigationBar
