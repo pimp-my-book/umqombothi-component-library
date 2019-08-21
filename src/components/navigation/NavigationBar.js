@@ -7,7 +7,7 @@ FUNCTIONS:
 ---Props
 * classname
 *children - to accept Additional JSX
-* props to accepts menu items in the nav drawer
+* content to accepts menu items in the nav drawer
 
 
 */
