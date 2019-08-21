@@ -22,36 +22,19 @@ Component Contracts
 for the components success and usability
 
 
-
-
-
-import React from 'react'
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
-
-
-describe('<NavigationBar/>', ()=>{
-
-
-it.skip('renders without crashing', () =>{
-    renderer.create(
-
-    )
-})
-
-})
-
+///////////////////////////////////////////////////////////////////////
 */
 
-//
-
-///////////////////////////////////////////////////////////////////////
 describe('<NavigationBar/>', ()=>{
-    it('Renders', ()=>{
-
-    })
+    
 
     it('toggles open and close',()=>{
-        
+        const {getByText,getByLabelText} = render(
+            <NavigationBar/>
+        )
+
+        fireEvent.click(getByText('span'))
+
     })
+    
 })
