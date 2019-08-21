@@ -27,7 +27,9 @@ className='',
              />
            </span>
         </div>
-        <div>
+        <div
+        className={isMenuOpen ? 'block sm-600:block md:block sm-land:block':'hidden'}
+        >
             menu
         </div>
 
