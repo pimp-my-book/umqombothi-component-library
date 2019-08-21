@@ -56,5 +56,5 @@ const propTypes ={
     children: PropTypes.element,
     props: PropTypes.func
 }
-
+NavigationBar.propTypes = propTypes
 export default NavigationBar
