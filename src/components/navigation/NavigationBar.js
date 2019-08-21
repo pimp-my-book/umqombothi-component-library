@@ -5,7 +5,7 @@ import '../../index.css'
 
 const NavigationBar = ({
 className='',
-children
+children,
 props
 }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
