@@ -27,14 +27,16 @@ for the components success and usability
 
 describe('<NavigationBar/>', ()=>{
     
-
+const onClick = jest.fn()
     it('toggles open and close',()=>{
         const {getByText,getByLabelText} = render(
-            <NavigationBar/>
+            <NavigationBar
+            onClick={onClick}
+            />
         )
 
         fireEvent.click(getByText('span'))
-
+        expect(onClick).toHaveBeenCalled();
     })
-    
+
 })
