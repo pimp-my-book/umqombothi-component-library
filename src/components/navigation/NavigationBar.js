@@ -5,6 +5,7 @@ import '../../index.css'
 
 const NavigationBar = ({
 className='',
+children
 
 }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,6 +20,7 @@ className='',
         PMB +
      
         </div>
+        {children}
         <div className="block ">
            <span onClick={()=> setIsMenuOpen(!isMenuOpen)} className="flex items-center px-3 py-2">
              <img
@@ -30,7 +32,7 @@ className='',
         <div
         className={isMenuOpen ? 'block sm-600:block md:block sm-land:block':'hidden'}
         >
-            menu items
+            {children}
         </div>
 
         </nav>
