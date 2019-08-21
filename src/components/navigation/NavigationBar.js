@@ -1,4 +1,16 @@
+/*
+NAVIGATION BAR
 
+FUNCTIONS:
+---on click it changes the state of isMenuOpen
+
+---Props
+* classname
+*children - to accept Additional JSX
+* props to accepts menu items in the nav drawer
+
+
+*/
 import React,{useState} from 'react';
 import PropTypes from 'prop-types';
 import '../../index.css'
