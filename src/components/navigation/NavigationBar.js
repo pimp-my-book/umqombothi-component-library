@@ -19,7 +19,7 @@ className='',
         PMB +
      
         </div>
-        <div className="block lg:hidden">
+        <div className="block ">
            <span onClick={()=> setIsMenuOpen(!isMenuOpen)} className="flex items-center px-3 py-2">
              <img
              src="../../assets/menu.svg"
@@ -30,7 +30,7 @@ className='',
         <div
         className={isMenuOpen ? 'block sm-600:block md:block sm-land:block':'hidden'}
         >
-            menu
+            menu items
         </div>
 
         </nav>
