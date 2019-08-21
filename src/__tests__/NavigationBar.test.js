@@ -1,5 +1,9 @@
 
-
+import React from 'react'
+import {render, fireEvent, getByAltText} from '@testing-library/react'
+import  NavigationBar from '../components/navigation/NavigationBar'
+import '@testing-library/react/cleanup-after-each'
+import '@testing-library/jest-dom/extend-expect'
 
 ///////////////////////////////////////////////////////////////////////
 /* Comoponent Behaviours
@@ -18,30 +22,25 @@ Component Contracts
 for the components success and usability
 
 
-
-
-
-import React from 'react'
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
-
-
-describe('<NavigationBar/>', ()=>{
-
-
-it.skip('renders without crashing', () =>{
-    renderer.create(
-
-    )
-})
-
-})
-
+///////////////////////////////////////////////////////////////////////
 */
 
-//
-
-///////////////////////////////////////////////////////////////////////
-it.skip('',()=>{
+describe('<NavigationBar/>', ()=>{
     
+const onClick = jest.fn()
+    it.skip('toggles open and close',()=>{
+        const {getByText,getByLabelText} = render(
+            <NavigationBar
+            onClick={onClick}
+            />
+        )
+
+        fireEvent.click(getByLabelText('menu'),{
+            target:{
+                files:[new File('https://pmb-static-assests.s3.amazonaws.com/menu.svg',{type:'image/svg'})]
+            }
+        })
+        expect(onClick).toHaveBeenCalled(1);
+    })
+
 })
