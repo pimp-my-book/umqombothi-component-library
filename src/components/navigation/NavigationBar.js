@@ -22,7 +22,7 @@ className='',
         <div className="block ">
            <span onClick={()=> setIsMenuOpen(!isMenuOpen)} className="flex items-center px-3 py-2">
              <img
-             src="../../assets/menu.svg"
+             src="https://pmb-static-assests.s3.amazonaws.com/menu.svg"
              alt="menu"
              />
            </span>
