@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../../index.css'
 
 
-const Input = ({
+const Textarea = ({
 className,
 value,
 onChange,
@@ -12,7 +12,7 @@ small,
 })=>{
    
     return(
-        <input
+        <Textarea
           className={`${className} 
           ${small ? 'border border-grey py-2 rounded-sm focus:outline-none w-16':'border border-grey py-2 px-5 rounded-sm focus:outline-none'} `}
           value={value}
@@ -29,5 +29,5 @@ const propTypes = {
     onChange: PropTypes.func,
     small: PropTypes.bool 
 }
-Input.propTypes = propTypes
-export default Input
+Textarea.propTypes = propTypes
+export default Textarea
