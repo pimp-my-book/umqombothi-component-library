@@ -7,13 +7,14 @@ const Input = ({
 className,
 value,
 onChange,
-
+...props
 })=>{
     return(
      <input
        className={`${className}`}
        value={value}
        onChange={onChange}
+       {...props}
      />
     )
 }
