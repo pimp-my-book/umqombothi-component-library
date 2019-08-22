@@ -1,0 +1,7 @@
+Input:
+
+```
+<Input
+placeholder="hello"
+/>
+```
