@@ -3,5 +3,5 @@ Input:
 ```
 <Input
 placeholder="hello"
->
+/>
 ```

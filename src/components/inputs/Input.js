@@ -11,7 +11,7 @@ onChange,
 })=>{
     return(
      <input
-       className={`${className}`}
+       className={`${className} border border-grey`}
        value={value}
        onChange={onChange}
        {...props}
