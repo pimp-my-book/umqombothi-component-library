@@ -8,27 +8,29 @@ describe('<Input/>',()=>{
 
     test('It accepts text as a prop', ()=>{
         const value = 'Fi9nd time'
-        const {getByText} = render(
+        const {queryByText} = render(
             <Input
             
             value={value}
             />
         )
 
-        expect(getByText(value))
+        expect(queryByText(value))
       })
       
       
       test('It accepts the placeholder', ()=>{
           const placeHolder = 'Type in me'
-          const {getByText} = render(
+          const value = 'Fi9nd time'
+
+          const {queryByPlaceholderText} = render(
               <Input
               placeHolder={placeHolder}
               value={value}
               />
           )
 
-          expect(getByText(placeHolder))
+          expect(queryByPlaceholderText(placeHolder))
         })
   
         
