@@ -14,7 +14,7 @@ small,
     return(
         <Textarea
           className={`${className} 
-          ${small ? 'border border-grey py-2 rounded-sm focus:outline-none w-16':'border border-grey py-2 px-5 rounded-sm focus:outline-none'} `}
+       border border-grey  rounded-sm focus:outline-none `}
           value={value}
           onChange={onChange}
           {...props}
