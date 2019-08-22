@@ -10,15 +10,17 @@ onChange,
 small,
 ...props
 })=>{
+   
     return(
-     <input
-       className={`${className} 
-       ${small ? 'border border-grey py-2 rounded-sm focus:outline-none w-16':'border border-grey py-2 px-5 rounded-sm focus:outline-none'} `}
-       value={value}
-       onChange={onChange}
-       {...props}
-     />
-    )
+        <input
+          className={`${className} 
+          ${small ? 'border border-grey py-2 rounded-sm focus:outline-none w-16':'border border-grey py-2 px-5 rounded-sm focus:outline-none'} `}
+          value={value}
+          onChange={onChange}
+          {...props}
+        />
+       )
+    
 }
 
 export default Input
