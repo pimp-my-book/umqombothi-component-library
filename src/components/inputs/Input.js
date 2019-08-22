@@ -23,4 +23,11 @@ small,
     
 }
 
+const propTypes = {
+    className: PropTypes.string,
+    value: PropTypes.string,
+    onChange: PropTypes.func,
+    small: PropTypes.bool 
+}
+Input.propTypes = propTypes
 export default Input
