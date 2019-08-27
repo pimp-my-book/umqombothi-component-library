@@ -1,6 +1,6 @@
 //Entry point for all of 
 //the components :D
-export {default as PrimaryButton} from './components/buttons/PrimaryButton'
+//export {default as PrimaryButton} from './components/buttons/PrimaryButton'
 export {default as NavigationBar } from './components/navigation/NavigationBar'
 export {default as HeadingOne } from './components/typography/HeadingOne'
 export {default as HeadingTwo} from './components/typography/HeadingTwo'
