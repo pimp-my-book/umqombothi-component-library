@@ -1,6 +1,6 @@
 import React from 'react'
 import {render, fireEvent} from '@testing-library/react'
-import  TextArea from '../components/inputs/TextArea'
+import  Textarea from '../components/inputs/Textarea'
 import '@testing-library/react/cleanup-after-each'
 import '@testing-library/jest-dom/extend-expect'
 
@@ -9,7 +9,7 @@ describe('<TextArea/>',()=>{
     test('It accepts text as a prop', ()=>{
         const value = 'Fi9nd time'
         const {queryByText} = render(
-            <TextArea
+            <Textarea
             
             value={value}
             />
@@ -24,7 +24,7 @@ describe('<TextArea/>',()=>{
           const value = 'Fi9nd time'
 
           const {queryByPlaceholderText} = render(
-              <TextArea
+              <Textarea
               placeHolder={placeHolder}
               value={value}
               />
