@@ -18,6 +18,7 @@
     "url": "https://github.com/pimp-my-book/umqombothi-component-library.git"
   },
   "scripts": {
+    "storybook": "start-storybook",
     "start": "npm-run-all --parallel watch:css start:react",
     "build": "react-scripts build build:css build:react",
     "build:css": "postcss src/css/tailwind.css -o src/index.css",
