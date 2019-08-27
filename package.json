@@ -1,6 +1,8 @@
 {
   "name": "umqombothi-component-library",
+
   "version": "0.6.0",
+
   "private": false,
   "main": "src/index.js",
   "module": "src/index.js",
