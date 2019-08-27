@@ -14,7 +14,7 @@ onChange,
     return(
         <textarea
           className={`${className} 
-       border border-grey  rounded-sm focus:outline-none `}
+       border border-grey  py-10 px-16 rounded-sm focus:outline-none `}
           value={value}
           onChange={onChange}
           {...props}
