@@ -7,9 +7,23 @@ import '@testing-library/jest-dom/extend-expect'
 describe('<DarkPinkButton/>',()=>{
     it('Renders text props', ()=>{
 
+        const text = 'shadows'
+        const {getByText} = render(
+            <DarkPinkButton
+            text={text}
+            />
+        )
+          
+        expect(getByText(text))
     })
 
     it('Renders loading spinner props', ()=>{
-        
+        const {getByAltText} = render(
+            <DarkPinkButton
+            isLoading
+            />
+        )
+
+        expect(getByAltText('loading...'))
     })
 })
