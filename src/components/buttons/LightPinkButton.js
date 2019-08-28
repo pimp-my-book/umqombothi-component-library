@@ -59,7 +59,8 @@ const LightPinkButton = ({
       } else{
         return (
             <button
-            className={`${className} ${long ? 'bg-pinkLight text-white font-bold py-2 px-10 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkLight hover:text-pinkLight ${className}' : large ? 'bg-pinkDarkest text-white font-bold py-4 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}': 
+            className={`${className} ${long ? 'bg-pinkLight text-white font-bold py-2 px-10 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkLight hover:text-pinkLight ${className}' :
+             large ? 'bg-pinkLight text-white font-bold py-4 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkLight hover:text-pinkLight ${className}': 
         'bg-pinkLight text-white font-bold py-2 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkLight hover:text-pinkLight '}`}
             onClick={onClick}
             disabled={disabled}
