@@ -29,8 +29,8 @@ const DarkPinkButton = ({
               
             </button>
         )
-    } 
-};
+    
+}
 
 DarkPinkButton.propTypes = propTypes;
 export default DarkPinkButton;
