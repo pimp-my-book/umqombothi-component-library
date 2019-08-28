@@ -12,5 +12,7 @@ export {default as BodyText} from './components/typography/BodyText'
 export {default as Footer } from './components/navigation/Footer'
 export {default as Input } from './components/inputs/Input'
 export {default as Textarea } from './components/inputs/Textarea'
+export {default as DarkPinkButton } from './components/buttons/DarkPinkButton'
+export {default as LightPinkButton } from './components/buttons/LightPinkButton'
 
 
