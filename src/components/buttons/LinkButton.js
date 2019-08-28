@@ -6,10 +6,12 @@ import '../../index.css'
 const LinkButton = ({
     text,
     className,
+    ...props
 
 }) => {
     return(
     <a
+    {...props}
     className={`${className} text-pinkDarkest`}
     >
      {text}
