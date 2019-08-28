@@ -38,4 +38,9 @@ storiesOf('Typography', module)
 		<CaptionText
 			text="Caption Text"
 		/>
+    })
+    .add('Body Text',()=>{
+		<BodyText
+			text="Body Text"
+		/>
 	})
