@@ -15,6 +15,7 @@ const DarkPinkButton = ({
     onClick,
     text,
     disabled = false,
+    isLoading
     
 }) => {
    
