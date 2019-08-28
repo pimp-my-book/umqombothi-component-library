@@ -5,5 +5,11 @@ import '@testing-library/react/cleanup-after-each'
 import '@testing-library/jest-dom/extend-expect'
 
 describe('<DarkPinkButton/>',()=>{
-    
+    it('Renders text props', ()=>{
+
+    })
+
+    it('Renders loading spinner props', ()=>{
+        
+    })
 })
