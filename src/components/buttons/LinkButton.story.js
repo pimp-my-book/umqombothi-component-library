@@ -5,6 +5,6 @@ import LinkButton from "./LinkButton"
 storiesOf("Link Button",module).add("basic example", ()=>(
     <LinkButton
     text="Hello Sun"
-    
+    href="/work"
     />
 ))
