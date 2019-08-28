@@ -10,6 +10,22 @@ const propTypes ={
     
 }
 
+const loadingStyles = {
+   
+        animation: 'rotation 2s infinite linear',
+        marginLeft:'550px'
+  
+    
+    keyframes rotation{
+        from {
+            -webkitTransform: 'rotate(0deg)
+        }
+        to {
+            -webkitTransform: 'rotate(359deg)'
+        }
+    }
+}
+
 const DarkPinkButton = ({
     className = "",
     onClick,
@@ -29,6 +45,7 @@ const DarkPinkButton = ({
             disabled={disabled}
             >
             <img
+            className={loadingStyles}
             src={loading}
             alt="loading..."
             />
