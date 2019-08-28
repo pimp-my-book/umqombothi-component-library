@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import '../../index.css'
-
+import loading from '../../assets/loading.svg'
 const propTypes ={
     className: PropTypes.string,
     onClick: PropTypes.func,
@@ -28,7 +28,10 @@ const DarkPinkButton = ({
             onClick={onClick}
             disabled={disabled}
             >
-            loading...
+            <img
+            src={loading}
+            alt="loading..."
+            />
               
             </button>
         )
