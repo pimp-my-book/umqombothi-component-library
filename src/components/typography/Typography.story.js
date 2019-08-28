@@ -19,3 +19,8 @@ storiesOf("Typography", module)
     text="Heading Two"
     />
 })
+.add("Heading Three",()=>{
+    <HeadingThree
+    text="Heading Three"
+    />
+})
