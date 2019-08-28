@@ -42,15 +42,16 @@ const DarkPinkButton = ({
       if(isLoading){
         return (
             <button
-            className={`${className} ${long ? 'bg-pinkDarkest text-white font-bold py-2 px-10 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}' : large ? 'bg-pinkDarkest text-white font-bold py-4 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}': 
-        'bg-pinkDarkest text-white font-bold py-2 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest '}`}
+            className={`${className} ${long ? 'bg-pinkDarkest text-white font-bold py-2 px-10 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}' 
+            : large ? 'bg-pinkDarkest text-white font-bold py-4 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}': 
+            'bg-pinkDarkest text-white font-bold py-2 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest '}`}
             onClick={onClick}
             disabled={disabled}
             >
             <ImageStyles
             
             src={loading}
-            alt="loading..."
+            alt='loading...'
             />
               
             </button>
