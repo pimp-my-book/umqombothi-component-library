@@ -10,7 +10,7 @@ const propTypes ={
     
 }
 
-const PrimaryButton = ({
+const DarkPinkButton = ({
     className = "",
     onClick,
     text,
@@ -31,5 +31,5 @@ const PrimaryButton = ({
     } 
 };
 
-PrimaryButton.propTypes = propTypes;
-export default PrimaryButton;
+DarkPinkButton.propTypes = propTypes;
+export default DarkPinkButton;
