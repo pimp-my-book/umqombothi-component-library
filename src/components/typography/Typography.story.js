@@ -9,38 +9,38 @@ import HeadingFour from './HeadingFour'
 import HeadingFive from './HeadingFive'
 
 storiesOf('Typography', module)
-	.add('Heading One', ()=>{
+	.add('Heading One', ()=>(
 		<HeadingOne
 			text="Heading One"
 		/>
-	})
-	.add('Heading Two',()=>{
+	))
+	.add('Heading Two',()=>(
 		<HeadingTwo
 			text="Heading Two"
 		/>
-	})
-	.add('Heading Three',()=>{
+	))
+	.add('Heading Three',()=>(
 		<HeadingThree
 			text="Heading Three"
 		/>
-	})
-	.add('Heading Four',()=>{
+	))
+	.add('Heading Four',()=>(
 		<HeadingFour
 			text="Heading Four"
 		/>
-    })
-    .add('Heading Five',()=>{
+    ))
+    .add('Heading Five',()=>(
 		<HeadingFive
 			text="Heading Five"
 		/>
-    })
-    .add('Caption Text',()=>{
+    ))
+    .add('Caption Text',()=>(
 		<CaptionText
 			text="Caption Text"
 		/>
-    })
-    .add('Body Text',()=>{
+    ))
+    .add('Body Text',()=>(
 		<BodyText
 			text="Body Text"
 		/>
-	})
+	))
