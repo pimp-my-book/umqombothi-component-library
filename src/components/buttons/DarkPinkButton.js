@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 import '../../index.css'
 
 const propTypes ={
@@ -32,5 +32,5 @@ const DarkPinkButton = ({
     
 }
 
-DarkPinkButton.propTypes = propTypes;
-export default DarkPinkButton;
+DarkPinkButton.propTypes = propTypes
+export default DarkPinkButton
