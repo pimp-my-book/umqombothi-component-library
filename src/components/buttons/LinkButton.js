@@ -13,6 +13,7 @@ const LinkButton = ({
     className={`${className} text-pinkDarkest`}
     >
      {text}
-    </a>)}
+    </a>
+    )}
 
 export default LinkButton
