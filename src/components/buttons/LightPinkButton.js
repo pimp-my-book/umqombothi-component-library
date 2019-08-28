@@ -10,6 +10,9 @@ const propTypes ={
     onClick: PropTypes.func,
     text: PropTypes.string,
     disabled: PropTypes.bool,
+    large: PropTypes.bool,
+    long: PropTypes.bool,
+    isLoading: PropTypes.bool
     
 }
 
