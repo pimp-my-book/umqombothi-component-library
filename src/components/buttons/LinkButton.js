@@ -31,7 +31,7 @@ const LinkButton = ({
     return(
     <LinkStyles
     {...props}
-    className={`${className} text-pinkDarkest relative font-bold`}
+    className={`${className} text-pinkDarkest relative font-medium`}
     >
      {text}
     </LinkStyles>
