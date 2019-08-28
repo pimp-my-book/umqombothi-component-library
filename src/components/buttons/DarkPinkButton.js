@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled, {keyframes} from "styled-components";
 import '../../index.css'
 import loading from '../../assets/loading.svg'
+
+
 const propTypes ={
     className: PropTypes.string,
     onClick: PropTypes.func,
@@ -10,21 +13,21 @@ const propTypes ={
     
 }
 
-const loadingStyles = {
-   
-        animation: 'rotation 2s infinite linear',
-        marginLeft:'550px'
-  
-    
-    keyframes rotation{
-        from {
-            -webkitTransform: 'rotate(0deg)
-        }
-        to {
-            -webkitTransform: 'rotate(359deg)'
-        }
-    }
-}
+
+const rotate = keyframes`
+  from {
+	  transform: rotate(0deg);
+  }
+  to {
+	  transform: rotate(360deg);
+  }
+`;
+const ImageStyles = styled.img`
+ display: inline-block;  
+ animation: ${rotate} 2s  infinite linear;
+`;
+
+
 
 const DarkPinkButton = ({
     className = "",
@@ -44,8 +47,8 @@ const DarkPinkButton = ({
             onClick={onClick}
             disabled={disabled}
             >
-            <img
-            className={loadingStyles}
+            <ImageStyles
+            
             src={loading}
             alt="loading..."
             />
