@@ -384,6 +384,7 @@ h3,
 h4,
 h5,
 h6,
+hr,
 figure,
 p,
 pre {
@@ -456,6 +457,14 @@ html {
   border-color: currentColor;
 }
 
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+hr {
+  border-top-width: 1px;
+}
+
 /**
  * Undo the `border-style: none` reset that Normalize applies to images so that
  * our `border-{width}` utilities have the expected effect.
@@ -476,8 +485,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: inherit;
-  opacity: 0.5;
+  color: #a0aec0;
 }
 
 button,
@@ -666,6 +674,52 @@ pmbTrans:hover:before {
 
 .border-top {
   border-top: #ED0677 8px solid;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border-width: 0 !important;
+}
+
+.not-sr-only {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+}
+
+.focus\:sr-only:focus {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border-width: 0 !important;
+}
+
+.focus\:not-sr-only:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
 }
 
 .appearance-none {
@@ -1840,6 +1894,10 @@ pmbTrans:hover:before {
 
 .border-dotted {
   border-style: dotted !important;
+}
+
+.border-double {
+  border-style: double !important;
 }
 
 .border-none {
@@ -3696,6 +3754,254 @@ pmbTrans:hover:before {
   padding-left: 1px !important;
 }
 
+.placeholder-pinkDarkest::placeholder {
+  color: #ED0677 !important;
+}
+
+.placeholder-pinkDark::placeholder {
+  color: #E06C9F !important;
+}
+
+.placeholder-pink::placeholder {
+  color: #E574BC !important;
+}
+
+.placeholder-pinkLight::placeholder {
+  color: #F9B4ED !important;
+}
+
+.placeholder-pinkLighest::placeholder {
+  color: #EFBCD5 !important;
+}
+
+.placeholder-black::placeholder {
+  color: #232735 !important;
+}
+
+.placeholder-greyDark::placeholder {
+  color: #A1A4B1 !important;
+}
+
+.placeholder-grey::placeholder {
+  color: #D3D4D8 !important;
+}
+
+.placeholder-greyLight::placeholder {
+  color: #F0F1F3 !important;
+}
+
+.placeholder-greyLightest::placeholder {
+  color: # !important;
+}
+
+.placeholder-white::placeholder {
+  color: #FFFFFF !important;
+}
+
+.placeholder-greenDarkest::placeholder {
+  color: #498467 !important;
+}
+
+.placeholder-greenDark::placeholder {
+  color: #61B066 !important;
+}
+
+.placeholder-green::placeholder {
+  color: #52B788 !important;
+}
+
+.placeholder-greenLight::placeholder {
+  color: #00A265 !important;
+}
+
+.placeholder-greenLightest::placeholder {
+  color: #BBE1C3 !important;
+}
+
+.placeholder-blueDarkest::placeholder {
+  color: #010059 !important;
+}
+
+.placeholder-blueDark::placeholder {
+  color: #249DC9 !important;
+}
+
+.placeholder-blue::placeholder {
+  color: #7FDBE8 !important;
+}
+
+.placeholder-blueLight::placeholder {
+  color: #A8E8EA !important;
+}
+
+.placeholder-blueLightest::placeholder {
+  color: #E0FFF7 !important;
+}
+
+.placeholder-redDarkest::placeholder {
+  color: #92140C !important;
+}
+
+.placeholder-redDark::placeholder {
+  color: #D80032 !important;
+}
+
+.placeholder-red::placeholder {
+  color: #EF233C !important;
+}
+
+.placeholder-redLight::placeholder {
+  color: #EC5766 !important;
+}
+
+.placeholder-redLightest::placeholder {
+  color: #EF7674 !important;
+}
+
+.placeholder-orangeDarkest::placeholder {
+  color: #F25C54 !important;
+}
+
+.placeholder-orangeDark::placeholder {
+  color: #F27059 !important;
+}
+
+.placeholder-orange::placeholder {
+  color: #F4845F !important;
+}
+
+.placeholder-orangeLight::placeholder {
+  color: #F79D65 !important;
+}
+
+.placeholder-orangeLightest::placeholder {
+  color: #F7B267 !important;
+}
+
+.focus\:placeholder-pinkDarkest:focus::placeholder {
+  color: #ED0677 !important;
+}
+
+.focus\:placeholder-pinkDark:focus::placeholder {
+  color: #E06C9F !important;
+}
+
+.focus\:placeholder-pink:focus::placeholder {
+  color: #E574BC !important;
+}
+
+.focus\:placeholder-pinkLight:focus::placeholder {
+  color: #F9B4ED !important;
+}
+
+.focus\:placeholder-pinkLighest:focus::placeholder {
+  color: #EFBCD5 !important;
+}
+
+.focus\:placeholder-black:focus::placeholder {
+  color: #232735 !important;
+}
+
+.focus\:placeholder-greyDark:focus::placeholder {
+  color: #A1A4B1 !important;
+}
+
+.focus\:placeholder-grey:focus::placeholder {
+  color: #D3D4D8 !important;
+}
+
+.focus\:placeholder-greyLight:focus::placeholder {
+  color: #F0F1F3 !important;
+}
+
+.focus\:placeholder-greyLightest:focus::placeholder {
+  color: # !important;
+}
+
+.focus\:placeholder-white:focus::placeholder {
+  color: #FFFFFF !important;
+}
+
+.focus\:placeholder-greenDarkest:focus::placeholder {
+  color: #498467 !important;
+}
+
+.focus\:placeholder-greenDark:focus::placeholder {
+  color: #61B066 !important;
+}
+
+.focus\:placeholder-green:focus::placeholder {
+  color: #52B788 !important;
+}
+
+.focus\:placeholder-greenLight:focus::placeholder {
+  color: #00A265 !important;
+}
+
+.focus\:placeholder-greenLightest:focus::placeholder {
+  color: #BBE1C3 !important;
+}
+
+.focus\:placeholder-blueDarkest:focus::placeholder {
+  color: #010059 !important;
+}
+
+.focus\:placeholder-blueDark:focus::placeholder {
+  color: #249DC9 !important;
+}
+
+.focus\:placeholder-blue:focus::placeholder {
+  color: #7FDBE8 !important;
+}
+
+.focus\:placeholder-blueLight:focus::placeholder {
+  color: #A8E8EA !important;
+}
+
+.focus\:placeholder-blueLightest:focus::placeholder {
+  color: #E0FFF7 !important;
+}
+
+.focus\:placeholder-redDarkest:focus::placeholder {
+  color: #92140C !important;
+}
+
+.focus\:placeholder-redDark:focus::placeholder {
+  color: #D80032 !important;
+}
+
+.focus\:placeholder-red:focus::placeholder {
+  color: #EF233C !important;
+}
+
+.focus\:placeholder-redLight:focus::placeholder {
+  color: #EC5766 !important;
+}
+
+.focus\:placeholder-redLightest:focus::placeholder {
+  color: #EF7674 !important;
+}
+
+.focus\:placeholder-orangeDarkest:focus::placeholder {
+  color: #F25C54 !important;
+}
+
+.focus\:placeholder-orangeDark:focus::placeholder {
+  color: #F27059 !important;
+}
+
+.focus\:placeholder-orange:focus::placeholder {
+  color: #F4845F !important;
+}
+
+.focus\:placeholder-orangeLight:focus::placeholder {
+  color: #F79D65 !important;
+}
+
+.focus\:placeholder-orangeLightest:focus::placeholder {
+  color: #F7B267 !important;
+}
+
 .pointer-events-none {
   pointer-events: none !important;
 }
@@ -4719,6 +5025,52 @@ pmbTrans:hover:before {
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One|Kanit');
 
 @media (min-width: 320px) {
+  .s\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .s\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .s\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .s\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .s\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -5891,6 +6243,10 @@ pmbTrans:hover:before {
 
   .s\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .s\:border-double {
+    border-style: double !important;
   }
 
   .s\:border-none {
@@ -7747,6 +8103,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .s\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .s\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .s\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .s\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .s\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .s\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .s\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .s\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .s\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .s\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .s\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .s\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .s\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .s\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .s\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .s\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .s\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .s\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .s\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .s\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .s\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .s\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .s\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .s\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .s\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .s\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .s\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .s\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .s\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .s\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .s\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .s\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .s\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .s\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .s\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .s\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .s\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .s\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .s\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .s\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .s\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .s\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .s\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .s\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .s\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .s\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .s\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .s\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .s\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .s\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .s\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .s\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .s\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .s\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .s\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .s\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .s\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .s\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .s\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .s\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .s\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .s\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .s\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -8769,6 +9373,52 @@ pmbTrans:hover:before {
 }
 
 @media (max-width: 320px) {
+  .s-max\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .s-max\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .s-max\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .s-max\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .s-max\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -9941,6 +10591,10 @@ pmbTrans:hover:before {
 
   .s-max\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .s-max\:border-double {
+    border-style: double !important;
   }
 
   .s-max\:border-none {
@@ -11797,6 +12451,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .s-max\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .s-max\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .s-max\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .s-max\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .s-max\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .s-max\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .s-max\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .s-max\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .s-max\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .s-max\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .s-max\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .s-max\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .s-max\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .s-max\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .s-max\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .s-max\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .s-max\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .s-max\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .s-max\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .s-max\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .s-max\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .s-max\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .s-max\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .s-max\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .s-max\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .s-max\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .s-max\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .s-max\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .s-max\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .s-max\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .s-max\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .s-max\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .s-max\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .s-max\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .s-max\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .s-max\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .s-max\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .s-max\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .s-max\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .s-max\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .s-max\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .s-max\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .s-max\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .s-max\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .s-max\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .s-max\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .s-max\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .s-max\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .s-max\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .s-max\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .s-max\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .s-max\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .s-max\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .s-max\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .s-max\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .s-max\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .s-max\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .s-max\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .s-max\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .s-max\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .s-max\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .s-max\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .s-max\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -12819,6 +13721,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 375px) {
+  .sl\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .sl\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .sl\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .sl\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .sl\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -13991,6 +14939,10 @@ pmbTrans:hover:before {
 
   .sl\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .sl\:border-double {
+    border-style: double !important;
   }
 
   .sl\:border-none {
@@ -15847,6 +16799,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .sl\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .sl\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .sl\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .sl\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .sl\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .sl\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .sl\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .sl\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .sl\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .sl\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .sl\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .sl\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .sl\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .sl\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .sl\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .sl\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .sl\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .sl\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .sl\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .sl\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .sl\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .sl\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .sl\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .sl\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .sl\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .sl\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .sl\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .sl\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .sl\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .sl\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .sl\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .sl\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .sl\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .sl\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .sl\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .sl\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .sl\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .sl\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .sl\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .sl\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .sl\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .sl\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .sl\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .sl\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .sl\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .sl\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .sl\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .sl\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .sl\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .sl\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .sl\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .sl\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .sl\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .sl\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .sl\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .sl\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .sl\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .sl\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .sl\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .sl\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .sl\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .sl\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .sl\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -16869,6 +18069,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 575px) {
+  .sm\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .sm\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .sm\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .sm\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .sm\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -18041,6 +19287,10 @@ pmbTrans:hover:before {
 
   .sm\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .sm\:border-double {
+    border-style: double !important;
   }
 
   .sm\:border-none {
@@ -19897,6 +21147,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .sm\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .sm\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .sm\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .sm\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .sm\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .sm\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .sm\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .sm\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .sm\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .sm\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .sm\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .sm\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .sm\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .sm\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .sm\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .sm\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .sm\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .sm\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .sm\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .sm\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .sm\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .sm\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .sm\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .sm\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .sm\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .sm\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .sm\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .sm\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .sm\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .sm\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .sm\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .sm\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .sm\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .sm\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .sm\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .sm\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .sm\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .sm\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .sm\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .sm\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .sm\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .sm\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .sm\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .sm\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .sm\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .sm\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .sm\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .sm\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .sm\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .sm\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .sm\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .sm\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .sm\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .sm\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .sm\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .sm\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .sm\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .sm\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .sm\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .sm\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .sm\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .sm\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .sm\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -20919,6 +22417,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 600px) {
+  .sm-600\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .sm-600\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .sm-600\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .sm-600\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .sm-600\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -22091,6 +23635,10 @@ pmbTrans:hover:before {
 
   .sm-600\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .sm-600\:border-double {
+    border-style: double !important;
   }
 
   .sm-600\:border-none {
@@ -23947,6 +25495,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .sm-600\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .sm-600\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .sm-600\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .sm-600\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .sm-600\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .sm-600\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .sm-600\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .sm-600\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .sm-600\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .sm-600\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .sm-600\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .sm-600\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .sm-600\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .sm-600\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .sm-600\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .sm-600\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .sm-600\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .sm-600\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .sm-600\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .sm-600\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .sm-600\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .sm-600\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .sm-600\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .sm-600\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .sm-600\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .sm-600\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .sm-600\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .sm-600\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .sm-600\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .sm-600\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .sm-600\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .sm-600\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .sm-600\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .sm-600\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .sm-600\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .sm-600\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .sm-600\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .sm-600\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .sm-600\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .sm-600\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .sm-600\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .sm-600\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .sm-600\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .sm-600\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .sm-600\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .sm-600\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .sm-600\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .sm-600\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .sm-600\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .sm-600\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .sm-600\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .sm-600\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .sm-600\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .sm-600\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .sm-600\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .sm-600\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .sm-600\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .sm-600\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .sm-600\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .sm-600\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .sm-600\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .sm-600\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .sm-600\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -24969,6 +26765,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 667px) {
+  .sm-land\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .sm-land\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .sm-land\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .sm-land\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .sm-land\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -26141,6 +27983,10 @@ pmbTrans:hover:before {
 
   .sm-land\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .sm-land\:border-double {
+    border-style: double !important;
   }
 
   .sm-land\:border-none {
@@ -27997,6 +29843,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .sm-land\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .sm-land\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .sm-land\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .sm-land\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .sm-land\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .sm-land\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .sm-land\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .sm-land\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .sm-land\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .sm-land\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .sm-land\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .sm-land\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .sm-land\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .sm-land\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .sm-land\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .sm-land\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .sm-land\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .sm-land\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .sm-land\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .sm-land\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .sm-land\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .sm-land\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .sm-land\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .sm-land\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .sm-land\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .sm-land\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .sm-land\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .sm-land\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .sm-land\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .sm-land\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .sm-land\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .sm-land\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .sm-land\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .sm-land\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .sm-land\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .sm-land\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .sm-land\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .sm-land\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .sm-land\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .sm-land\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .sm-land\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .sm-land\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .sm-land\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .sm-land\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .sm-land\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .sm-land\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .sm-land\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .sm-land\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .sm-land\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .sm-land\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .sm-land\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .sm-land\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .sm-land\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .sm-land\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .sm-land\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .sm-land\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .sm-land\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .sm-land\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .sm-land\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .sm-land\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .sm-land\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .sm-land\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .sm-land\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -29019,6 +31113,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 768px) {
+  .md\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .md\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .md\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .md\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .md\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -30191,6 +32331,10 @@ pmbTrans:hover:before {
 
   .md\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .md\:border-double {
+    border-style: double !important;
   }
 
   .md\:border-none {
@@ -32047,6 +34191,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .md\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .md\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .md\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .md\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .md\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .md\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .md\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .md\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .md\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .md\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .md\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .md\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .md\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .md\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .md\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .md\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .md\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .md\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .md\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .md\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .md\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .md\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .md\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .md\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .md\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .md\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .md\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .md\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .md\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .md\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .md\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .md\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .md\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .md\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .md\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .md\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .md\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .md\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .md\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .md\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .md\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .md\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .md\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .md\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .md\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .md\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .md\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .md\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .md\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .md\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .md\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .md\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .md\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .md\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .md\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .md\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .md\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .md\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .md\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .md\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .md\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .md\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .md\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -33069,6 +35461,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 992px) {
+  .lg\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .lg\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .lg\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .lg\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .lg\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -34241,6 +36679,10 @@ pmbTrans:hover:before {
 
   .lg\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .lg\:border-double {
+    border-style: double !important;
   }
 
   .lg\:border-none {
@@ -36097,6 +38539,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .lg\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .lg\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .lg\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .lg\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .lg\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .lg\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .lg\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .lg\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .lg\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .lg\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .lg\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .lg\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .lg\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .lg\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .lg\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .lg\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .lg\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .lg\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .lg\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .lg\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .lg\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .lg\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .lg\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .lg\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .lg\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .lg\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .lg\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .lg\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .lg\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .lg\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .lg\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .lg\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .lg\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .lg\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .lg\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .lg\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .lg\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .lg\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .lg\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .lg\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .lg\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .lg\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .lg\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .lg\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .lg\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .lg\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .lg\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .lg\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .lg\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .lg\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .lg\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .lg\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .lg\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .lg\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .lg\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .lg\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .lg\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .lg\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .lg\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .lg\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .lg\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .lg\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .lg\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -37119,6 +39809,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 1024px) {
+  .x\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .x\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .x\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .x\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .x\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -38291,6 +41027,10 @@ pmbTrans:hover:before {
 
   .x\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .x\:border-double {
+    border-style: double !important;
   }
 
   .x\:border-none {
@@ -40147,6 +42887,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .x\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .x\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .x\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .x\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .x\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .x\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .x\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .x\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .x\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .x\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .x\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .x\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .x\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .x\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .x\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .x\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .x\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .x\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .x\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .x\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .x\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .x\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .x\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .x\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .x\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .x\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .x\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .x\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .x\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .x\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .x\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .x\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .x\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .x\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .x\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .x\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .x\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .x\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .x\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .x\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .x\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .x\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .x\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .x\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .x\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .x\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .x\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .x\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .x\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .x\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .x\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .x\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .x\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .x\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .x\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .x\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .x\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .x\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .x\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .x\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .x\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .x\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .x\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -41169,6 +44157,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
+  .lapie\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .lapie\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .lapie\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .lapie\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .lapie\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -42341,6 +45375,10 @@ pmbTrans:hover:before {
 
   .lapie\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .lapie\:border-double {
+    border-style: double !important;
   }
 
   .lapie\:border-none {
@@ -44197,6 +47235,254 @@ pmbTrans:hover:before {
     padding-left: 1px !important;
   }
 
+  .lapie\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .lapie\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .lapie\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .lapie\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .lapie\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .lapie\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .lapie\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .lapie\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .lapie\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .lapie\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .lapie\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .lapie\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .lapie\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .lapie\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .lapie\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .lapie\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .lapie\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .lapie\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .lapie\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .lapie\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .lapie\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .lapie\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .lapie\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .lapie\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .lapie\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .lapie\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .lapie\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .lapie\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .lapie\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .lapie\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .lapie\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .lapie\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .lapie\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .lapie\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .lapie\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .lapie\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .lapie\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .lapie\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .lapie\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .lapie\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .lapie\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .lapie\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .lapie\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .lapie\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .lapie\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .lapie\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .lapie\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .lapie\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .lapie\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .lapie\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .lapie\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .lapie\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .lapie\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .lapie\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .lapie\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .lapie\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .lapie\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .lapie\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .lapie\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .lapie\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .lapie\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .lapie\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
+  }
+
   .lapie\:pointer-events-none {
     pointer-events: none !important;
   }
@@ -45219,6 +48505,52 @@ pmbTrans:hover:before {
 }
 
 @media (min-width: 1500px) {
+  .xl\:sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .xl\:not-sr-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
+  .xl\:focus\:sr-only:focus {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+  }
+
+  .xl\:focus\:not-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+
   .xl\:appearance-none {
     -webkit-appearance: none !important;
        -moz-appearance: none !important;
@@ -46391,6 +49723,10 @@ pmbTrans:hover:before {
 
   .xl\:border-dotted {
     border-style: dotted !important;
+  }
+
+  .xl\:border-double {
+    border-style: double !important;
   }
 
   .xl\:border-none {
@@ -48245,6 +51581,254 @@ pmbTrans:hover:before {
 
   .xl\:pl-px {
     padding-left: 1px !important;
+  }
+
+  .xl\:placeholder-pinkDarkest::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .xl\:placeholder-pinkDark::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .xl\:placeholder-pink::placeholder {
+    color: #E574BC !important;
+  }
+
+  .xl\:placeholder-pinkLight::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .xl\:placeholder-pinkLighest::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .xl\:placeholder-black::placeholder {
+    color: #232735 !important;
+  }
+
+  .xl\:placeholder-greyDark::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .xl\:placeholder-grey::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .xl\:placeholder-greyLight::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .xl\:placeholder-greyLightest::placeholder {
+    color: # !important;
+  }
+
+  .xl\:placeholder-white::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .xl\:placeholder-greenDarkest::placeholder {
+    color: #498467 !important;
+  }
+
+  .xl\:placeholder-greenDark::placeholder {
+    color: #61B066 !important;
+  }
+
+  .xl\:placeholder-green::placeholder {
+    color: #52B788 !important;
+  }
+
+  .xl\:placeholder-greenLight::placeholder {
+    color: #00A265 !important;
+  }
+
+  .xl\:placeholder-greenLightest::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .xl\:placeholder-blueDarkest::placeholder {
+    color: #010059 !important;
+  }
+
+  .xl\:placeholder-blueDark::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .xl\:placeholder-blue::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .xl\:placeholder-blueLight::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .xl\:placeholder-blueLightest::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .xl\:placeholder-redDarkest::placeholder {
+    color: #92140C !important;
+  }
+
+  .xl\:placeholder-redDark::placeholder {
+    color: #D80032 !important;
+  }
+
+  .xl\:placeholder-red::placeholder {
+    color: #EF233C !important;
+  }
+
+  .xl\:placeholder-redLight::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .xl\:placeholder-redLightest::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .xl\:placeholder-orangeDarkest::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .xl\:placeholder-orangeDark::placeholder {
+    color: #F27059 !important;
+  }
+
+  .xl\:placeholder-orange::placeholder {
+    color: #F4845F !important;
+  }
+
+  .xl\:placeholder-orangeLight::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .xl\:placeholder-orangeLightest::placeholder {
+    color: #F7B267 !important;
+  }
+
+  .xl\:focus\:placeholder-pinkDarkest:focus::placeholder {
+    color: #ED0677 !important;
+  }
+
+  .xl\:focus\:placeholder-pinkDark:focus::placeholder {
+    color: #E06C9F !important;
+  }
+
+  .xl\:focus\:placeholder-pink:focus::placeholder {
+    color: #E574BC !important;
+  }
+
+  .xl\:focus\:placeholder-pinkLight:focus::placeholder {
+    color: #F9B4ED !important;
+  }
+
+  .xl\:focus\:placeholder-pinkLighest:focus::placeholder {
+    color: #EFBCD5 !important;
+  }
+
+  .xl\:focus\:placeholder-black:focus::placeholder {
+    color: #232735 !important;
+  }
+
+  .xl\:focus\:placeholder-greyDark:focus::placeholder {
+    color: #A1A4B1 !important;
+  }
+
+  .xl\:focus\:placeholder-grey:focus::placeholder {
+    color: #D3D4D8 !important;
+  }
+
+  .xl\:focus\:placeholder-greyLight:focus::placeholder {
+    color: #F0F1F3 !important;
+  }
+
+  .xl\:focus\:placeholder-greyLightest:focus::placeholder {
+    color: # !important;
+  }
+
+  .xl\:focus\:placeholder-white:focus::placeholder {
+    color: #FFFFFF !important;
+  }
+
+  .xl\:focus\:placeholder-greenDarkest:focus::placeholder {
+    color: #498467 !important;
+  }
+
+  .xl\:focus\:placeholder-greenDark:focus::placeholder {
+    color: #61B066 !important;
+  }
+
+  .xl\:focus\:placeholder-green:focus::placeholder {
+    color: #52B788 !important;
+  }
+
+  .xl\:focus\:placeholder-greenLight:focus::placeholder {
+    color: #00A265 !important;
+  }
+
+  .xl\:focus\:placeholder-greenLightest:focus::placeholder {
+    color: #BBE1C3 !important;
+  }
+
+  .xl\:focus\:placeholder-blueDarkest:focus::placeholder {
+    color: #010059 !important;
+  }
+
+  .xl\:focus\:placeholder-blueDark:focus::placeholder {
+    color: #249DC9 !important;
+  }
+
+  .xl\:focus\:placeholder-blue:focus::placeholder {
+    color: #7FDBE8 !important;
+  }
+
+  .xl\:focus\:placeholder-blueLight:focus::placeholder {
+    color: #A8E8EA !important;
+  }
+
+  .xl\:focus\:placeholder-blueLightest:focus::placeholder {
+    color: #E0FFF7 !important;
+  }
+
+  .xl\:focus\:placeholder-redDarkest:focus::placeholder {
+    color: #92140C !important;
+  }
+
+  .xl\:focus\:placeholder-redDark:focus::placeholder {
+    color: #D80032 !important;
+  }
+
+  .xl\:focus\:placeholder-red:focus::placeholder {
+    color: #EF233C !important;
+  }
+
+  .xl\:focus\:placeholder-redLight:focus::placeholder {
+    color: #EC5766 !important;
+  }
+
+  .xl\:focus\:placeholder-redLightest:focus::placeholder {
+    color: #EF7674 !important;
+  }
+
+  .xl\:focus\:placeholder-orangeDarkest:focus::placeholder {
+    color: #F25C54 !important;
+  }
+
+  .xl\:focus\:placeholder-orangeDark:focus::placeholder {
+    color: #F27059 !important;
+  }
+
+  .xl\:focus\:placeholder-orange:focus::placeholder {
+    color: #F4845F !important;
+  }
+
+  .xl\:focus\:placeholder-orangeLight:focus::placeholder {
+    color: #F79D65 !important;
+  }
+
+  .xl\:focus\:placeholder-orangeLightest:focus::placeholder {
+    color: #F7B267 !important;
   }
 
   .xl\:pointer-events-none {

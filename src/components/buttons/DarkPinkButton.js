@@ -21,7 +21,7 @@ const DarkPinkButton = ({
    
        return (
             <button
-            className={`bg-pinkDarkest text-white font-bold py-2 px-8 rounded-px hover:bg-white border-pinkDarkest hover:text-pinkDarkest ${className}`}
+            className={`bg-pinkDarkest text-white font-bold py-2 px-8 rounded-px hover:bg-white hover:border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}`}
             onClick={onClick}
             disabled={disabled}
             >
