@@ -22,7 +22,7 @@ const DarkPinkButton = ({
    
        return (
             <button
-            className={`${className} ${long ? 'bg-pinkDarkest text-white font-bold py-10 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}' : large ? 'bg-pinkDarkest text-white font-bold py-2 px-20 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}': 
+            className={`${className} ${long ? 'bg-pinkDarkest text-white font-bold py-2 px-10 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}' : large ? 'bg-pinkDarkest text-white font-bold py-4 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest ${className}': 
         'bg-pinkDarkest text-white font-bold py-2 px-8 rounded-px hover:bg-white focus:outline-none  border-2 hover:border-pinkDarkest hover:text-pinkDarkest '}`}
             onClick={onClick}
             disabled={disabled}
