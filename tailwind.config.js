@@ -94,7 +94,7 @@ module.exports = {
     '4': '4px',
     '8': '8px',
   },
-  borderColors: global.Object.assign({ default: theme => theme(colors['grey-light']) }, theme => theme('colors')),
+  borderColors: theme => theme('colors'),
   borderRadius: {
     'none': '0',
     'px': '5px',
