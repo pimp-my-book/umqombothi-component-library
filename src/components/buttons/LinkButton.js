@@ -37,4 +37,10 @@ const LinkButton = ({
     </LinkStyles>
     )}
 
+const propTypes = {
+    className: PropTypes.string,
+    text: PropTypes.string
+}
+
+LinkButton.propTypes = propTypes
 export default LinkButton
