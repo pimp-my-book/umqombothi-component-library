@@ -12,7 +12,7 @@ const Alert = ({
 }) => {
     return (
         <div
-            className={`${className}  w-350 h-10 bg-green`}
+            className={`${className} p-2 w-350 h-10 bg-green`}
         >
             {message}
         </div>
