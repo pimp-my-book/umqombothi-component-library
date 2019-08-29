@@ -19,6 +19,8 @@ const Alert = ({
         return (
             <div
                 {...props}
+                aria-label="Close"
+                data-dismiss="alert"
                 className={`${className} p-2 w-350 h-10 bg-green flex flex-row relative`}
             >
 
