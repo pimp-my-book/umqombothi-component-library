@@ -21,7 +21,7 @@ const Alert = ({
                 {message}
             </p>
             <span
-                className="right-0 top-0 absolute"
+                className="right-0 top-0 absolute mr-2"
             >X</span>
         </div>
     )
