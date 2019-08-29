@@ -14,7 +14,18 @@ describe('<Alert/>', () => {
 
         expectExport(queryByText(message))
     })
-    it('Can close the alert', () => {
 
+    it('Can close the alert', () => {
+        const onClick = jest.fn()
+        const message = 'I am ready to jump out the window'
+        const { getByLabelText } = render(
+            <Alert
+                onClick={onClick}
+                message={message}
+            />
+        )
+
+        fireEvent.click(getByLabelText('close button'))
+        expect(onClick), toHaveBeenCalledTimes(1)
     })
 })

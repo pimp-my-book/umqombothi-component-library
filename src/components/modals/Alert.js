@@ -33,6 +33,7 @@ const Alert = ({
                     {message}
                 </p>
                 <span
+
                     aria-label="close button"
                     onClick={hideAlert}
                     className="right-0 top-0 absolute mr-2 cursor-pointer"
