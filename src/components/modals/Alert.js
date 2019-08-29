@@ -13,12 +13,16 @@ const Alert = ({
     return (
         <div
             {...props}
-            className={`${className} p-2 w-350 h-10 bg-green`}
+            className={`${className} p-2 w-350 h-10 bg-green flex flex-row relative`}
         >
-            {...props}
+
             <p
                 className="font-body">
-                {message}</p>
+                {message}
+            </p>
+            <span
+                className="right-0 top-0 absolute"
+            >X</span>
         </div>
     )
 }
