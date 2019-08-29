@@ -14,7 +14,9 @@ const Alert = ({
         <div
             className={`${className} p-2 w-350 h-10 bg-green`}
         >
-            {message}
+            <p
+                className="font-body">
+                {message}</p>
         </div>
     )
 }
