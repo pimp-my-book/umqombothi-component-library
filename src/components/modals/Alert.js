@@ -18,13 +18,13 @@ const Alert = ({
         return (
             <div
                 {...props}
-                aria-label="Close"
+                aria-label="Alert"
                 data-dismiss="alert"
                 className={`${className} p-2 w-350 h-10 rounded-px ${error ? 'bg-red' : warning ? 'bg-orange' : 'bg-green'} flex flex-row relative`}
             >
                 <div
                     className="mr-5">
-                    {error ? <span>🚨</span> : warning ? <span>🚧</span> : <div></div>}
+                    {error ? <span aria-label="error emoji">🚨</span> : warning ? <span aria-label="warning emoji">🚧</span> : <div></div>}
                 </div>
 
                 <p
