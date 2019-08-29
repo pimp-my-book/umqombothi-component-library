@@ -28,10 +28,12 @@ const Alert = ({
                 </div>
 
                 <p
+                    aria-label="alert message"
                     className="font-body">
                     {message}
                 </p>
                 <span
+                    aria-label="close button"
                     onClick={hideAlert}
                     className="right-0 top-0 absolute mr-2 cursor-pointer"
                 >&times;</span>
