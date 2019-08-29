@@ -24,7 +24,7 @@ const Alert = ({
             >
                 <div
                     className="mr-5">
-                    {error ? <span role="img" aria-label="error emoji">🚨</span> : warning ? <span role="img" aria-label="warning emoji">🚧</span> : <div></div>}
+                    {error ? <span role="img" aria-label="error emoji">🚨</span> : warning ? <span role="img" aria-label="warning emoji">🚧</span> : <span role="img" aria-label="success emoji">🎉</span>}
                 </div>
 
                 <p
