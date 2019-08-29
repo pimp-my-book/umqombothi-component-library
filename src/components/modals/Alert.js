@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import '../../index.css'
-import errorIcon from '../../assets/error.svg'
 
 const Alert = ({
     message,
@@ -45,4 +44,13 @@ const Alert = ({
 
 }
 
+
+const propTypes = {
+    message: PropTypes.string,
+    className: PropTypes.string,
+    error: PropTypes.bool,
+    warning: PropTypes.bool,
+}
+
+Alert.propTypes = propTypes
 export default Alert
