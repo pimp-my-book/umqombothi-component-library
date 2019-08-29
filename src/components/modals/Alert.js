@@ -23,7 +23,10 @@ const Alert = ({
                 data-dismiss="alert"
                 className={`${className} p-2 w-350 h-10 rounded-px ${error ? 'bg-red' : warning ? 'bg-orange' : 'bg-green'} flex flex-row relative`}
             >
-                {error ? <span>🚨</span> : warning ? <span>🚧</span> : <div></div>}
+                <div
+                    className="mr-5">
+                    {error ? <span>🚨</span> : warning ? <span>🚧</span> : <div></div>}
+                </div>
 
                 <p
                     className="font-body">
