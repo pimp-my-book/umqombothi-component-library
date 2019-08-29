@@ -21,7 +21,7 @@ const Alert = ({
                 {...props}
                 aria-label="Close"
                 data-dismiss="alert"
-                className={`${className} p-2 w-350 h-10 ${error ? 'bg-red' : warning ? 'bg-yellow' : 'bg-green'} flex flex-row relative`}
+                className={`${className} p-2 w-350 h-10 rounded-px ${error ? 'bg-red' : warning ? 'bg-orange' : 'bg-green'} flex flex-row relative`}
             >
 
                 <p
