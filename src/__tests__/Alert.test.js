@@ -12,7 +12,7 @@ describe('<Alert/>', () => {
             />
         )
 
-        expectExport(queryByText(message))
+        expect(queryByText(message))
     })
 
     it('Can close the alert', () => {
@@ -26,6 +26,6 @@ describe('<Alert/>', () => {
         )
 
         fireEvent.click(getByLabelText('close button'))
-        expect(onClick), toHaveBeenCalledTimes(1)
+        expect(onClick).toHaveBeenCalledTimes(1)
     })
 })
