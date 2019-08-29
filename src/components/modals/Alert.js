@@ -6,9 +6,11 @@ import '../../index.css'
 const Alert = ({
     message,
     className,
-    ...props
-}) =>{
-    return(
+    ...props,
+    error,
+    warning
+}) => {
+    return (
         <div>
             {message}
         </div>
