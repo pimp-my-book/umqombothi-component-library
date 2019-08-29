@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import '../../index.css'
-
+import errorIcon from '../../assets/error.svg'
 
 const Alert = ({
     message,
@@ -23,7 +23,7 @@ const Alert = ({
                 data-dismiss="alert"
                 className={`${className} p-2 w-350 h-10 rounded-px ${error ? 'bg-red' : warning ? 'bg-orange' : 'bg-green'} flex flex-row relative`}
             >
-                {error ? <div>Hello</div> : warning ? <div>Hello</div> : <div></div>}
+                {error ? <span>🚨</span> : warning ? <span>🚧</span> : <div></div>}
 
                 <p
                     className="font-body">
