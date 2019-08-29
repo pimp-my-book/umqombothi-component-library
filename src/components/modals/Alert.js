@@ -29,7 +29,7 @@ const Alert = ({
                 <span
                     onClick={hideAlert}
                     className="right-0 top-0 absolute mr-2 cursor-pointer"
-                >X</span>
+                >&times;</span>
             </div>
         )
     }
