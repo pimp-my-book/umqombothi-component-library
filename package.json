@@ -17,6 +17,7 @@
   },
   "scripts": {
     "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook",
     "start": "npm-run-all --parallel watch:css start:react",
     "build": "react-scripts build build:css build:react",
     "build:css": "postcss src/css/tailwind.css -o src/index.css",
