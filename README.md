@@ -1,7 +1,5 @@
-# Umqombothi  🍶
+# Umqombothi  🍶[![Build Status](https://travis-ci.org/pimp-my-book/umqombothi-component-library.svg?branch=master)](https://travis-ci.org/pimp-my-book/umqombothi-component-library)  ![npm](https://img.shields.io/npm/v/umqombothi-component-library?style=plastic)
 
-[![Build Status](https://travis-ci.org/pimp-my-book/umqombothi-component-library.svg?branch=master)](https://travis-ci.org/pimp-my-book/umqombothi-component-library)
-![npm](https://img.shields.io/npm/v/umqombothi-component-library?style=plastic)
 This is the React component Library based off the Design System for PMB Plus.
 
 ### 🎉 Features
