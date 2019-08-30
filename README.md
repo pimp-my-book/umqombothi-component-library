@@ -45,3 +45,7 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 
 ```
+
+## 🛰️SSR Usage
+
+To render it with NextJS there are additional steps. Check out this repo for a working [example](https://github.com/AmoDinho/umqombothi-hello-world-ssr).
