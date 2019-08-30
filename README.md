@@ -4,11 +4,11 @@
 
 This is the React component Library based off the Design System for PMB Plus.
 
-Features
+### 🎉 Features
 * Range of components from buttons, navs, inputs etc
 * Uses TailwindCSS
 
-## Installation
+## 📦 Installation
 
 You can easily install the library via NPM or Yarn:
 
@@ -23,11 +23,24 @@ $ npm install umqombothi-component-library
 $ yarn add umqombothi-component-library
 ```
 
-## Usage
+## 🌪️ Usage
 
 You can import the components like so:
 
 ```
+import React from 'react'
 import {Input} from 'umqombothi-component-library'
+import ReactDOM from 'react-dom';
+
+function App() {
+  return (
+    <Input
+    value={this.state.inputValue}
+    placeholder="Type in me"
+    />
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('#app'));
 
 ```
