@@ -8,7 +8,26 @@ Features
 * Range of components from buttons, navs, inputs etc
 * Uses TailwindCSS
 
-To-Do:
-- [ ] Make all components in the component registery. Each component that is made needs to ship to NPM after it has been created.
-- [ ] Make design system guidelines available
-- [ ] Create docs site
+## Installation
+
+You can easily install the library via NPM or Yarn:
+
+**npm**
+```
+$ npm install umqombothi-component-library
+```
+
+**yarn**
+
+```
+$ yarn add umqombothi-component-library
+```
+
+## Usage
+
+You can import the components like so:
+
+```
+import {Input} from 'umqombothi-component-library'
+
+```
