@@ -7,6 +7,7 @@ This is the React component Library based off the Design System for PMB Plus.
 ### 🎉 Features
 * Range of components from buttons, navs, inputs etc
 * Uses TailwindCSS
+* [Storybook](https://umqombothi.netlify.com) app to view all components.
 
 ## 📦 Installation
 
