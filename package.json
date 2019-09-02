@@ -52,8 +52,23 @@
     "tailwindcss": "^1.0.5"
   },
   "bit": {
-    "env": {},
+    "env": {
+      "compiler": "bit.envs/compilers/react@6.0.0"
+    },
     "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "overrides": {
+      "utils/sort-array": {
+        "env": {
+          "compiler": "bit.ens/compilers/babel@6.0.0"
+        }
+      },
+      "ui/*": {
+        "peerDependencies": {
+          "react": "16.8.6",
+          "react-dom": "16.8.6"
+        }
+      }
+    }
   }
 }
