@@ -6,10 +6,12 @@
   "module": "src/index.js",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "styled-components": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "repository": {
     "type": "git",
@@ -56,19 +58,6 @@
       "compiler": "bit.envs/compilers/react@1.0.2"
     },
     "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm",
-    "overrides": {
-      "utils/sort-array": {
-        "env": {
-          "compiler": "bit.ens/compilers/babel@6.0.0"
-        }
-      },
-      "ui/*": {
-        "peerDependencies": {
-          "react": "16.8.6",
-          "react-dom": "16.8.6"
-        }
-      }
-    }
+    "packageManager": "npm"
   }
 }
