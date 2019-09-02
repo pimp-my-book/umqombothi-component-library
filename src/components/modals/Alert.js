@@ -7,7 +7,7 @@ const Alert = ({
     className,
     error,
     warning,
-    ...props,
+    ...props
 }) => {
     const [showAlert, setAlert] = useState(true)
 
