@@ -39,7 +39,8 @@ const LightPinkButton = ({
   disabled = false,
   isLoading,
   large,
-  long
+  long,
+  ...props
 }) => {
 
   if (isLoading) {

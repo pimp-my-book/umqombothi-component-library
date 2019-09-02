@@ -38,7 +38,8 @@ const DarkPinkButton = ({
   disabled = false,
   isLoading,
   large,
-  long
+  long,
+  ...props
 }) => {
 
   if (isLoading) {
