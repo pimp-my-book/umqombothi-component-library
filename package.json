@@ -58,15 +58,14 @@
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "npm",
     "overrides": {
-      "utils/sort-array": {
-        "env": {
-          "compiler": "bit.ens/compilers/babel@6.0.0"
-        }
-      },
-      "ui/*": {
+      "*": {
+        "dependencies": {
+          "react": "-",
+          "react-dom": "-"
+        },
         "peerDependencies": {
-          "react": "16.8.6",
-          "react-dom": "16.8.6"
+          "react": "^16.8.6",
+          "react-dom": "^16.8.6"
         }
       }
     }
