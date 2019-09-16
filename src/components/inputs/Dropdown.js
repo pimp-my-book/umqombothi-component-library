@@ -5,7 +5,7 @@ import '../../index.css'
 const Dropdown = ({ className, children, ...props }) => {
     return (
         <select
-            className={`${className} px-5 py-2`}
+            className={`${className} px-5 py-2 font-body`}
             {...props}
         >
 
