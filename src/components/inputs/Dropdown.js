@@ -2,9 +2,10 @@ import React, { Children } from 'react'
 import PropTypes from 'prop-types';
 import '../../index.css'
 
-const Dropdown = ({ children, ...props }) => {
+const Dropdown = ({ className, children, ...props }) => {
     return (
         <select
+            className={`${className} px-5 py-2`}
             {...props}
         >
 
