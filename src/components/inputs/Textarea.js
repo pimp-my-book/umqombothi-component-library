@@ -4,30 +4,30 @@ import '../../index.css'
 
 
 const Textarea = ({
-className,
-value,
-onChange,
+  className,
+  value,
+  onChange,
 
-...props
-})=>{
-   
-    return(
-        <textarea
-          className={`${className} 
-       border border-grey  py-10 px-16 rounded-sm focus:outline-none `}
-          value={value}
-          onChange={onChange}
-          {...props}
-        />
-       )
-    
+  ...props
+}) => {
+
+  return (
+    <textarea
+      className={`${className} 
+       border border-grey font-body  py-10 px-16 rounded-sm focus:outline-none `}
+      value={value}
+      onChange={onChange}
+      {...props}
+    />
+  )
+
 }
 
 const propTypes = {
-    className: PropTypes.string,
-    value: PropTypes.string,
-    onChange: PropTypes.func,
-    
+  className: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+
 }
 Textarea.propTypes = propTypes
 export default Textarea
