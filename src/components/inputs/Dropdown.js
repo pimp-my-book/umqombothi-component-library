@@ -16,7 +16,7 @@ const Dropdown = ({ className, children, ...props }) => {
 
 const propTypes = {
     className: PropTypes.string,
-    children: PropTypes.element
+    children: PropTypes.array
 }
 
 Dropdown.propTypes = propTypes

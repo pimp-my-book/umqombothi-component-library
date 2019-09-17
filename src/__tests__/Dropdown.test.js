@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import BodyText from '../components/typography/BodyText'
-import '@testing-library/react/cleanup-after-each'
+import Dropdown from '../components/inputs/Dropdown'
 import '@testing-library/jest-dom/extend-expect'
 import expectExport from 'expect'
 
@@ -21,7 +20,7 @@ describe('<Dropdown/>', () => {
     })
 
     it('Allows you to select something', () => {
-        const { getByText, getByDisplayValue } = render(
+        const { getByText, getByLabelText, getByDisplayValue } = render(
             <Dropdown>
                 <option>MTBDF</option>
                 <option>Yezus</option>
@@ -29,7 +28,7 @@ describe('<Dropdown/>', () => {
             </Dropdown>
         )
 
-        fireEvent.select(getByText('option'), { target: { value: 'Yezus' } })
+        fireEvent.select(getByLabelText('dropdown-select'), { target: { value: 'Yezus' } })
         expect(getByDisplayValue('Yezus'))
     })
 })
