@@ -33,11 +33,12 @@ const NavigationBar = ({
                 alt="PMB +"
             /></Navbar.Brand>
             <Navbar.Toggle><img
+                aria-label="collapse-menu"
                 src="https://pmb-static-assests.s3.amazonaws.com/menu.svg"
                 alt="menu"
             /></Navbar.Toggle>
             <Navbar.Collapse>
-                <Nav className="ml-auto">
+                <Nav className="ml-auto" aria-label="collapse-items">
                     {children}
                 </Nav>
             </Navbar.Collapse>
