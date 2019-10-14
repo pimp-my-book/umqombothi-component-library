@@ -13,10 +13,16 @@ FUNCTIONS:
 */
 import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
+import styled from 'styled-components'
 import PropTypes from 'prop-types';
 import '../../index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+const NavBarStyles = styled(Navbar)`
+&&&{
+    border-top: #ED0677 8px solid;
+}
+`
 const NavigationBar = ({
     className = '',
     children,
@@ -25,8 +31,8 @@ const NavigationBar = ({
 
 
     return (
-        <Navbar
-            className={`border-top bg-blueDarkest flex items-center justify-between flex-wrap bg-green-darker p-6`}
+        <NavBarStyles
+            className=' bg-blueDarkest flex items-center justify-between flex-wrap bg-green-darker p-6'
             expand="lg">
             <Navbar.Brand> <img
                 src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
@@ -42,7 +48,7 @@ const NavigationBar = ({
                     {children}
                 </Nav>
             </Navbar.Collapse>
-        </Navbar>
+        </NavBarStyles>
 
     )
 }
