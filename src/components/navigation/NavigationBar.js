@@ -37,7 +37,7 @@ const NavigationBar = ({
                 alt="menu"
             /></Navbar.Toggle>
             <Navbar.Collapse>
-                <Nav>
+                <Nav className="ml-auto">
                     {children}
                 </Nav>
             </Navbar.Collapse>
