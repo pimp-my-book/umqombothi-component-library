@@ -28,6 +28,10 @@ const NavigationBar = ({
         <Navbar
             className={`border-top bg-blueDarkest flex items-center justify-between flex-wrap bg-green-darker p-6`}
             expand="lg">
+            <Navbar.Brand> <img
+                src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
+                alt="PMB +"
+            /></Navbar.Brand>
             <Navbar.Toggle><img
                 src="https://pmb-static-assests.s3.amazonaws.com/menu.svg"
                 alt="menu"
