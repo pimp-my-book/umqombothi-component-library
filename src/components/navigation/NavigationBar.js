@@ -12,7 +12,7 @@ FUNCTIONS:
 
 */
 import React, { useState } from 'react';
-import { Navbar } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import PropTypes from 'prop-types';
 import '../../index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,6 +32,11 @@ const NavigationBar = ({
                 src="https://pmb-static-assests.s3.amazonaws.com/menu.svg"
                 alt="menu"
             /></Navbar.Toggle>
+            <Navbar.Collapse>
+                <Nav>
+                    {children}
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
 
     )
