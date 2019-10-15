@@ -13,6 +13,6 @@ export default {
             exclude: 'node_modules/**'
         }),
         svg(),
-        css({ output: 'bundle.css' })
+        css({ output: 'build/bundle.css' })
     ]
 }
