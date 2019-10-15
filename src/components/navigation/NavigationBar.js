@@ -11,50 +11,49 @@ FUNCTIONS:
 
 
 */
-import React,{useState} from 'react';
+import React, { useState } from 'react';
+import { Navbar, Nav } from 'react-bootstrap'
+import styled from 'styled-components'
 import PropTypes from 'prop-types';
 import '../../index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+const NavBarStyles = styled(Navbar)`
+&&&{
+    border-top: #ED0677 8px solid;
+}
+`
 const NavigationBar = ({
-className='',
-children,
-content
+    className = '',
+    children,
+    content
 }) => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    return(
-        <nav
-        className={`border-top bg-blueDarkest flex items-center justify-between flex-wrap bg-green-darker p-6`}
-        >
-        <div
-        className={`flex items-center flex-no-shrink text`}
-        >
-          <img
-             src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
-             alt="PMB +"
-             />
-        
-        </div>
-        {children}
-        <div className="block ">
-           <span onClick={()=> setIsMenuOpen(!isMenuOpen)} className="flex items-center px-3 py-2">
-             <img
-             src="https://pmb-static-assests.s3.amazonaws.com/menu.svg"
-             alt="menu"
-             />
-           </span>
-        </div>
-        <div
-        className={isMenuOpen ? 'block sm-600:block md:block sm-land:block':'hidden'}
-        >
-            {content}
-        </div>
 
-        </nav>
+    return (
+        <NavBarStyles
+            className=' bg-blueDarkest flex items-center justify-between flex-wrap bg-green-darker p-6'
+            expand="lg">
+            <Navbar.Brand> <img
+                src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
+                alt="PMB +"
+            /></Navbar.Brand>
+            <Navbar.Toggle><img
+                aria-label="collapse-menu"
+                src="https://pmb-static-assests.s3.amazonaws.com/menu.svg"
+                alt="menu"
+            /></Navbar.Toggle>
+            <Navbar.Collapse>
+                <Nav className="" aria-label="collapse-items">
+                    {children}
+                </Nav>
+            </Navbar.Collapse>
+        </NavBarStyles>
+
     )
 }
 
-const propTypes ={
+const propTypes = {
     className: PropTypes.string,
     children: PropTypes.element,
     content: PropTypes.func
