@@ -17,7 +17,7 @@ const Footer = ({
           {/*Make money with us col*/}
           <HeadingFive
             text="Get to know us"
-            className="text-white text-justify"
+            className="text-white "
           />
           <a href="https://newsroom.pimpmybook.co.za/">
             <BodyText
