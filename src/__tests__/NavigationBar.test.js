@@ -2,7 +2,8 @@
 import React from 'react'
 import { render, fireEvent, getByAltText } from '@testing-library/react'
 import NavigationBar from '../components/navigation/NavigationBar'
-import '@testing-library/react/cleanup-after-each'
+import Input from '../components/inputs/Input'
+import BodyText from '../components/typography/BodyText'
 import '@testing-library/jest-dom/extend-expect'
 import expectExport from 'expect'
 
