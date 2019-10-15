@@ -1,9 +1,10 @@
 {
   "name": "umqombothi-component-library",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": false,
   "main": "src/index.js",
   "module": "src/index.js",
+  "style": "dist/index.css",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -15,6 +16,12 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
+  "files": [
+    "dist/*.{js,css}",
+    "src/*",
+    "public/*",
+    "*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/pimp-my-book/umqombothi-component-library.git"
