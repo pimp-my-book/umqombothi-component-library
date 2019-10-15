@@ -9,13 +9,21 @@ storiesOf("Nav", module)
         <NavigationBar
         >
 
-            <div className="flex flex-row">
+            <div className="flex lg:flex-row sm:flex-col p-3">
                 <Input />
 
 
                 <BodyText
-                    className="text-white"
+                    className="text-white p-2"
                     text="Sell your book"
+                />
+                <BodyText
+                    className="text-white p-2"
+                    text="Get help"
+                />
+                <BodyText
+                    className="text-white p-2"
+                    text="Fall from a tree"
                 />
             </div>
 
