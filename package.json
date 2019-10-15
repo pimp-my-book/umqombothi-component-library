@@ -4,7 +4,6 @@
   "private": false,
   "main": "src/index.js",
   "module": "src/index.js",
-  "style": "dist/index.css",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.3.1",
