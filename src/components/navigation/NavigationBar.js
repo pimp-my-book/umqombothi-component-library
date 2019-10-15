@@ -44,7 +44,7 @@ const NavigationBar = ({
                 alt="menu"
             /></Navbar.Toggle>
             <Navbar.Collapse>
-                <Nav className="ml-auto" aria-label="collapse-items">
+                <Nav className="" aria-label="collapse-items">
                     {children}
                 </Nav>
             </Navbar.Collapse>
