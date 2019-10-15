@@ -1,5 +1,6 @@
 import babel from 'rollup-plugin-babel'
 import svg from 'rollup-plugin-svg'
+import css from 'rollup-plugin-css-only'
 export default {
     input: 'src/index.js',
     output: {
@@ -11,6 +12,7 @@ export default {
         babel({
             exclude: 'node_modules/**'
         }),
-        svg()
+        svg(),
+        css({ output: 'bundle.css' })
     ]
 }
