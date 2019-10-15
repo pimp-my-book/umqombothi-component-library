@@ -1,9 +1,10 @@
 
 import React from 'react'
-import {render, fireEvent, getByAltText} from '@testing-library/react'
-import  NavigationBar from '../components/navigation/NavigationBar'
+import { render, fireEvent, getByAltText } from '@testing-library/react'
+import NavigationBar from '../components/navigation/NavigationBar'
 import '@testing-library/react/cleanup-after-each'
 import '@testing-library/jest-dom/extend-expect'
+import expectExport from 'expect'
 
 ///////////////////////////////////////////////////////////////////////
 /* Comoponent Behaviours
@@ -25,22 +26,33 @@ for the components success and usability
 ///////////////////////////////////////////////////////////////////////
 */
 
-describe('<NavigationBar/>', ()=>{
-    
-const onClick = jest.fn()
-    it.skip('toggles open and close',()=>{
-        const {getByText,getByLabelText} = render(
-            <NavigationBar
-            onClick={onClick}
-            />
+describe('<NavigationBar/>', () => {
+
+    it('It renders the children components', () => {
+        const { getByText, getByLabelText } = render(
+            <NavigationBar>
+                <div className="flex lg:flex-row sm:flex-col p-3">
+                    <Input />
+
+
+                    <BodyText
+                        className="text-white p-2"
+                        text="Sell your book"
+                    />
+                    <BodyText
+                        className="text-white p-2"
+                        text="Get help"
+                    />
+                    <BodyText
+                        className="text-white p-2"
+                        text="Fall from a tree"
+                    />
+                </div>
+            </NavigationBar>
         )
 
-        fireEvent.click(getByLabelText('menu'),{
-            target:{
-                files:[new File('https://pmb-static-assests.s3.amazonaws.com/menu.svg',{type:'image/svg'})]
-            }
-        })
-        expect(onClick).toHaveBeenCalled(1);
+        expectExport(getByText('Get help'))
+
     })
 
 })
