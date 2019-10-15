@@ -67,7 +67,7 @@ const Footer = ({
             src="https://pmb-plus-assets.s3.amazonaws.com/pmb_plus_logo.svg"
             alt="pmb plus logo"
           />
-          <div className="flex flex-row mt-3 ml-5 p-3">
+          <div className="flex flex-row mt-3 lg:ml-5 p-3">
 
             <img
               className="pr-2"
