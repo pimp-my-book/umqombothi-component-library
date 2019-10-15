@@ -25,7 +25,7 @@ const Footer = ({
               text="Blog"
             />
           </a>
-          <a href="">
+          <a href="https://newsroom.pimpmybook.co.za/jobs/">
             <BodyText
               className="text-white font-thin"
               text="Careers"
@@ -49,29 +49,12 @@ const Footer = ({
             text="Sell on PMB Plus"
           />
 
-          <BodyText
-            className="text-white font-thin"
-            text="Be a vendor on PMB Plus"
-          />
         </div>
         <div className="flex flex-col x:ml-32 md:ml-16 s:mt-5 md:mt-0">
           {/*Help col*/}
           <HeadingFive
             text="We Can Help You"
             className="text-white text-sm"
-          />
-          <BodyText
-            className="text-white font-thin"
-            text="Your orders"
-          />
-
-          <BodyText
-            className="text-white font-thin"
-            text="Shipping Policy"
-          />
-          <BodyText
-            className="text-white font-thin"
-            text="Returns & Refunds"
           />
           <BodyText
             className="text-white font-thin"
@@ -85,11 +68,7 @@ const Footer = ({
             alt="pmb plus logo"
           />
           <div className="flex flex-row mt-3 ml-5 p-3">
-            <img
-              className="p-2"
-              src="https://pmb-plus-assets.s3.amazonaws.com/instagram.svg"
-              alt="instagram logo"
-            />
+
             <img
               className="pr-2"
               src="https://pmb-plus-assets.s3.amazonaws.com/facebook.svg"
