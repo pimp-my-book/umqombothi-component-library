@@ -25,15 +25,18 @@ const Footer = ({
               text="Blog"
             />
           </a>
-          <BodyText
-            className="text-white font-thin"
-            text="Careers"
-          />
-
-          <BodyText
-            className="text-white font-thin"
-            text="About Pimp My Book"
-          />
+          <a href="">
+            <BodyText
+              className="text-white font-thin"
+              text="Careers"
+            />
+          </a>
+          <a href="https://newsroom.pimpmybook.co.za/company/">
+            <BodyText
+              className="text-white font-thin"
+              text="About Pimp My Book"
+            />
+          </a>
         </div>
         <div className="flex flex-col x:ml-32 md:ml-16 s:mt-5 md:mt-0">
           {/*We can help you  col*/}
