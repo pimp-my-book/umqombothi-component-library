@@ -1,9 +1,10 @@
 {
   "name": "umqombothi-component-library",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "private": false,
   "main": "build/index.js",
-  "module": "dist/index.js",
+  "module": "build/index.js",
+  "style": "build/bunlde.css",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.3.1",
