@@ -16,7 +16,8 @@ export default {
         }
         , {
             file: 'dist/index.umd.js',
-            format: 'umd'
+            format: 'umd',
+            name: 'umqombothi'
         }
     ],
     external: ['react'],
