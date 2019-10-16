@@ -16,9 +16,7 @@
     "react-dom": "^16.8.6"
   },
   "files": [
-    "dist/*.{js,css}",
-    "build/*.{js,css}",
-    "build"
+    "dist/*.{js,css}"
   ],
   "repository": {
     "type": "git",
