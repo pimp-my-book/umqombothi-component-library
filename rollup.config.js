@@ -17,7 +17,7 @@ export default {
         }),
         svg(),
         css({ output: 'build/umqobothi.css' }),
-        postcss: ({
+        postcss({
             plugins: [
                 tailwindcss('./tailwind.config.js'),
                 require('autoprefixer'),
