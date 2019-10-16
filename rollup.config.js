@@ -7,7 +7,7 @@ var tailwindcss = require('tailwindcss')
 export default {
     input: 'src/index.js',
     output: {
-        file: 'build/index.js',
+        file: 'dist/index.js',
         format: 'cjs'
     },
     external: ['react'],
@@ -16,7 +16,7 @@ export default {
             exclude: 'node_modules/**'
         }),
         svg(),
-        css({ output: 'build/umqobothi.css' }),
+        css({ output: 'dist/umqombothi.css' }),
         postcss({
             plugins: [
                 tailwindcss('./tailwind.config.js'),
