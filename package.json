@@ -1,6 +1,6 @@
 {
   "name": "umqombothi-component-library",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -16,7 +16,7 @@
     "react-dom": "^16.8.6"
   },
   "files": [
-    "build/*.{js,css}"
+    "dist/*.{js,css}"
   ],
   "repository": {
     "type": "git",
