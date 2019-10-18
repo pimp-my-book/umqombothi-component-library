@@ -2535,11 +2535,11 @@ pmbTrans:hover:before {
 }
 
 .font-display {
-  font-family: Rubik Mono One, open-sans !important;
+  font-family: Rubik Mono One !important;
 }
 
 .font-body {
-  font-family: Kanit, open-sans !important;
+  font-family: Kanit !important;
 }
 
 .font-hairline {
