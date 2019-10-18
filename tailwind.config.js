@@ -15,8 +15,8 @@ module.exports = {
       'xl': [{ 'min': '1500px' }],
     },
     fontFamily: {
-      display: ['Rubik Mono One', 'sans-serif'],
-      body: ['Kanit', 'sans-serif'],
+      display: ['Rubik Mono One'],
+      body: ['Kanit'],
     },
     fontSize: {
       'xs': '.75rem',     // 12px

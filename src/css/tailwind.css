@@ -3,7 +3,7 @@
 @tailwind utilities;
 
   @font-face {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit',
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -12,7 +12,7 @@
 
 
   @font-face {
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Rubik Mono One';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
