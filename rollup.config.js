@@ -20,7 +20,7 @@ export default {
             name: 'umqombothi'
         }
     ],
-    external: ['react'],
+    external: ['react', 'react-bootstrap', 'styled-components', 'prop-types'],
     plugins: [
         babel({
             exclude: 'node_modules/**'
