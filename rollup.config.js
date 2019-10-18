@@ -9,17 +9,29 @@ export default {
     output: [
         {
             file: 'dist/index.cjs.js',
-            format: 'cjs'
+            format: 'cjs',
+            globals: {
+                'react': 'React',
+                'react-bootstrap': 'ReactBootstrap',
+                'styled-components': 'styled',
+                'prop-types': 'PropTypes'
+            }
         }, {
             file: 'dist/index.es.js',
             format: 'es'
+            ,
+            globals: {
+                'react': 'React',
+                'react-bootstrap': 'ReactBootstrap',
+                'styled-components': 'styled',
+                'prop-types': 'PropTypes'
+            }
         }
         , {
             file: 'dist/index.umd.js',
             format: 'umd',
             name: 'umqombothi'
-        },
-        {
+            ,
             globals: {
                 'react': 'React',
                 'react-bootstrap': 'ReactBootstrap',
