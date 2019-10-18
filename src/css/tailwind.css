@@ -7,7 +7,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local('Kanit-Regular'), url(../assets//fonts/Kanit-Regular.ttf) format('ttf');
+    src: local('Kanit-Regular'), url(../assets//fonts/Kanit-Regular.ttf) format('truetype');
   }
 
 
@@ -16,5 +16,5 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src:  local('RubikMonoOne-Regular'), url(../assets//fonts/RubikMonoOne-Regular.ttf) format('ttf');
+    src:  local('RubikMonoOne-Regular'), url(../assets//fonts/RubikMonoOne-Regular.ttf) format('truetype');
   }
