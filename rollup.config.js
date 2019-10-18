@@ -18,6 +18,14 @@ export default {
             file: 'dist/index.umd.js',
             format: 'umd',
             name: 'umqombothi'
+        },
+        {
+            globals: {
+                'react': 'React',
+                'react-bootstrap': 'ReactBootstrap',
+                'styled-components': 'styled',
+                'prop-types': 'PropTypes'
+            }
         }
     ],
     external: ['react', 'react-bootstrap', 'styled-components', 'prop-types'],
