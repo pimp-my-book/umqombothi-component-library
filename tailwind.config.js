@@ -346,6 +346,13 @@ module.exports = {
 
       addComponents(borderBottom);
       addComponents(border);
+    },
+    function ({ addVariant }) {
+      const before = {
+        '::before': {
+          before: '::before'
+        }
+      }
     }
   ]
 }
