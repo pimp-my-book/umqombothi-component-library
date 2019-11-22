@@ -19,3 +19,4 @@ export { default as LightPinkButton } from './components/buttons/LightPinkButton
 export { default as LinkButton } from './components/buttons/LinkButton'
 export { default as Alert } from './components/modals/Alert'
 export { default as Dropdown } from './components/inputs/Dropdown'
+export { default as Toogle } from './components/inputs/Toogle'
