@@ -1,8 +1,8 @@
 {
   "name": "umqombothi-component-library",
-  "version": "1.2.29",
+  "version": "1.2.30",
   "private": false,
-  "main": "dist/index.cjs.js",
+  "main": "src/index.js",
   "module": "dist/index.es.js",
   "style": "dist/umqombothi.css",
   "license": "MIT",
@@ -16,7 +16,8 @@
     "react-dom": "^16.8.6"
   },
   "files": [
-    "dist/*.{js,css}"
+    "dist/*.{js,css}",
+    "src/*.{js,css}"
   ],
   "repository": {
     "type": "git",
