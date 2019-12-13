@@ -1,6 +1,6 @@
 # Umqombothi  🍶[![Build Status](https://travis-ci.org/pimp-my-book/umqombothi-component-library.svg?branch=master)](https://travis-ci.org/pimp-my-book/umqombothi-component-library)  ![npm](https://img.shields.io/npm/v/umqombothi-component-library?style=plastic)
 
-This is the React component Library based off the Design System for ![PMB Plus](https://dggixahbp77tr.cloudfront.net/).
+This is the React component Library based off the Design System for [PMB Plus](https://dggixahbp77tr.cloudfront.net/).
 
 The design system can be viewed on [Figma](https://www.figma.com/file/MH0ruI8pUrg7s2NXM4jra59W/PMB?node-id=0%3A1)
 
@@ -74,8 +74,7 @@ const withCSS = require("@zeit/next-css");
 module.exports = withCSS(
   withTM({
     transpileModules: [
-      "umqombothi-component-library",
-      "bootstrap/dist/css/bootstrap.min.css"
+      "umqombothi-component-library"
     ],
     webpack(config) {
       config.module.rules.push({
@@ -91,4 +90,22 @@ module.exports = withCSS(
 
 Because the lib includes svgs in it, we need to a loader so Next can read them. (Wow we do a lot for this Next thingy 🤨)
 
+## Styling 
 
+So the lib uses TailwindCSS for writting scalable CSS. You can easliy customes colours, spacing etc of components, but what is also great is you can easily use the provided classes to apply custom margin,padding,height, width etc.
+
+For example:
+
+```
+<>
+
+ <div className="flex flex-col p-10">
+    <HeadingOne text="Welcome to Umqombothi!" />
+    <Input placeholder="You can tell me anything inbetween everything." />
+    <LightPinkButton text="Send it" />
+  </div>
+
+</>
+```
+
+Hear we just created a flex column and added about 2.5rem of padding to the column. 🌟
