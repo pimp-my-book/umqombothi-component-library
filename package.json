@@ -1,6 +1,6 @@
 {
   "name": "umqombothi-component-library",
-  "version": "1.2.30",
+  "version": "1.2.31",
   "private": false,
   "main": "src/index.js",
   "module": "dist/index.es.js",
@@ -17,7 +17,10 @@
   },
   "files": [
     "dist/*.{js,css}",
-    "src/*.{js,css}"
+    "src/*.{js,css}",
+    "src/components/*",
+    "src/css/*",
+    "src/assets/*"
   ],
   "repository": {
     "type": "git",
