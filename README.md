@@ -49,4 +49,46 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 
 ## 🛰️SSR Usage
 
-To render it with NextJS there are additional steps. Check out this repo for a working [example](https://github.com/AmoDinho/umqombothi-hello-world-ssr).
+To render it with NextJS there are additional steps. Check out this Codesandbox for a working [example](https://codesandbox.io/s/hello-world-xmu4s?fontsize=14&hidenavigation=1&theme=dark).
+
+### Steps to follow once you have your NextJS app setup:
+
+This is just to make sure you have the correct setup in your `next.config.js` and modules installed. 😀
+
+I. Install modules
+
+```
+$ yarn add umqombohti-component-library next-transpile-modules @zeit/next-css @svgr/webpack
+```
+
+II. Get your `next.config.js` setup correctly. 
+
+The reason why you installed : `next-transpile-modules & @zeit/next-cs` was to tell Next that you need these files to be transpiled and included with your NextJS bundle for when you deploy your app.
+
+```
+//next.config.js
+
+const withTM = require("next-transpile-modules");
+const withCSS = require("@zeit/next-css");
+
+module.exports = withCSS(
+  withTM({
+    transpileModules: [
+      "umqombothi-component-library",
+      "bootstrap/dist/css/bootstrap.min.css"
+    ],
+    webpack(config) {
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: ["@svgr/webpack"]
+      });
+      return config;
+    }
+  })
+);
+
+```
+
+Because the lib includes svgs in it, we need to a loader so Next can read them. (Wow we do a lot for this Next thingy 🤨)
+
+
